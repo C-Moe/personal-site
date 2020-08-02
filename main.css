@@ -1,0 +1,154 @@
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif; 
+    background-color: #f9f9f9;
+}
+
+#logo {
+    /* padding-top: 30px; */
+    max-width: 25%;
+    height: auto;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+}
+
+#intro {
+    /*background-image: url('personal-website-bgv3.jpg'); */
+    height: 100%;
+    background-size: cover;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(2);
+    background-size: 100%;
+    z-index: -1;
+    background-image: url('personal-website-bgv3.jpg');
+}
+
+#intro-text {
+    /* color: #fef7f3; */
+    color: #fff;
+    font-size: 300%;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 270px;
+    text-shadow: 1px 3px 3px #545f6f;
+    position: relative;
+}
+
+#intro-text-subtitle {
+    color: #fff;
+    /*
+    color: #f2ebe6; 
+    color: #f0eae6; 
+    color: #545f6f;
+    
+
+    text-shadow: 1px 1px 1px #545f6f; 
+    */
+    font-size: 17px;
+    font-weight: 100;
+}
+
+#arrow-gif {
+    width: 2%;
+    height: auto;
+    margin-top: 37vh;
+}
+
+#projects { 
+    background-color: #f5eff0;    
+}
+
+#connect ul {
+    list-style: none;
+}
+
+#connect li img {
+    height: 28px;
+    width: auto;
+}
+
+a {
+    color: #49515e;
+}
+
+a:hover {
+    color: #49515e;
+    opacity: 70%;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+a.card-img-top-link:hover {
+    transition-duration: 0.7s;
+}
+
+.lg-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.md-img {
+    max-width: 50%;
+    height: auto;
+}
+
+.sm-img {
+    max-width: 30%;
+    height: auto;
+}
+
+.sm-img-div {
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.lg-text {
+    max-width: 80%;
+}
+
+.md-text {
+    max-width: 50%;
+}
+
+/*
+footer ul {
+    list-style: none;
+  }
+
+footer li img {
+    height: 32px;
+    width: auto;
+}
+*/
