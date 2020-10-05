@@ -10,7 +10,6 @@ body {
 }
 
 #logo {
-    /* padding-top: 30px; */
     max-width: 20%;
     height: auto;
 }
@@ -48,7 +47,6 @@ body {
 }
 
 #intro-text {
-    /* color: #fef7f3; */
     color: #fff;
     font-size: 300%;
     letter-spacing: 1px;
@@ -60,14 +58,6 @@ body {
 
 #intro-text-subtitle {
     color: #fff;
-    /*
-    color: #f2ebe6; 
-    color: #f0eae6; 
-    color: #545f6f;
-    
-
-    text-shadow: 1px 1px 1px #545f6f; 
-    */
     font-size: 17px;
     font-weight: 100;
 }
@@ -78,8 +68,21 @@ body {
     margin-top: 37vh;
 }
 
-#projects { 
+#projects, #current, hr { 
     background-color: #f5eff0;    
+}
+
+hr {
+    border: 1px dashed #fff;
+}
+
+.current-item > img {
+    width: 5%;
+    height: auto;
+}
+
+#current > h6 {
+    font-size: smaller;
 }
 
 #connect ul {
