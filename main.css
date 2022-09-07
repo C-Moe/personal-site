@@ -73,6 +73,11 @@ body {
     font-weight: 600;
 }
 
+.sub-section-header {
+    font-weight: 540;
+    font-style: italic;
+}
+
 #projects, #current, hr { 
     background-color: #f5eff0;    
 }
