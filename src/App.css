@@ -1,0 +1,410 @@
+:root {
+  --off-black: #131212;
+  --grey: #474747;
+  /* --off-white: #fafafa; */
+  --off-white: #f8fbff;
+  --yellow: #FCCA46;
+  --transparent-yellow: rgba(252,202,70, 0.5);
+  --pale-yellow: #FFDA80;
+  --medium-green: #A1C181;
+  --cool-green: #619B8A;
+  --dark-blue: #2E4657;
+}
+
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  line-height: normal;
+  font-weight: 350;
+  font-size: 0.95em;
+  color: var(--off-black);
+  background-color: var(--off-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--off-black);
+  font-family: "Noto Serif Display", Palatino, serif;
+}
+
+/******** FOR PROJECTS AND PROJECT CARDS ON HOMEPAGE ********/
+
+/* width of container for project cards on homepage */
+.projectsContainer {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  max-width: 96vw;
+}
+
+/* gap between project cards on homepage */
+.row {
+  --bs-gutter-x: 0.7rem;
+}
+
+/* styling for card */
+.card {
+  /* removes border */
+  --bs-card-border-width: 0px; 
+
+  padding-bottom: 50px;
+
+  /* transition when mouse leaves card, chrome & safari and firefox  */
+  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+
+  --bs-card-bg: var(--off-white);
+}
+
+/* styling for image above card */
+.card-img-top {
+  width: 100%;
+  height: 17vw;
+  object-fit: cover;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* for card image and overlays (shading and text) */
+.card-img {
+  position: relative;
+}
+
+/* for shading and text overlay above card image */
+.card-img-overlay {
+  border-radius: 0;
+  height: 17vw;
+  width: 100%;
+  padding: 16px;
+  vertical-align: middle;
+  opacity: 0;
+
+  /* transition when mouse hovers, chrome & safari and firefox  */
+  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+
+  background: rgba(71, 71, 71, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* styling for card text */
+.card-img-overlay .card-text-overlay {
+  max-width: 90%;
+  margin-bottom: 0px;
+}
+
+/* reveals card image overlays on hover */
+.card:hover .card-img-overlay {
+  opacity: 1;
+}
+
+/* translates card on hover, chrome & safari and firefox  */
+.card:hover {
+  transform: translate(0, -2rem);
+  -webkit-transform: translate(0, -2rem);
+  -ms-transform: translate(0, -2rem);
+
+  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+}
+
+/* spacing for all card text relative to card  */
+.card-body {
+  --bs-card-spacer-x: 0px;
+  --bs-card-spacer-y: 8px;
+}
+
+/* styling for card title */
+.card-title {
+  font-family: "Noto Serif Display", Palatino, serif;
+  font-weight: 350;
+  font-size: 1.3em;
+  margin-bottom: 4px;
+  color: var(--grey);
+  letter-spacing: -0.1px;
+}
+
+/* styling for card text */
+.card-text {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+
+
+/******** FOR PROJECTS ON A PROJECT PAGE ********/
+.projectPage {
+  margin-left: 2vw;
+  margin-right: 2vw;
+  max-width: 96vw;
+}
+
+.projectPageContent {
+  margin-left: 4.5vw;
+  margin-right: 4.5vw;
+  margin-top: 2vw;
+}
+
+/* styling for large image at top of project page */
+.projectTopImage {
+  width: 100%;
+  max-width: 96vw;
+}
+
+.projectImage {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* styling for project name on project page */
+h1 {
+  font-weight: 550;
+  font-size: 4.5em;
+  letter-spacing: -3px;
+}
+
+/* styling for section header in project page */
+/* h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 0rem;
+} */
+
+/* styling for section header aka e.g. "Overview" */
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  line-height: 1.8rem;
+}
+
+/* styling for subsection headers in text content */
+h4 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+}
+
+/* styling for sanserif subheader used for overview project info */
+h5 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+  font-weight: 450;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: var(--grey);
+}
+
+.sectionHeaderColumn {
+  padding-right: 20px;
+}
+
+/* styling for links */
+a {
+  color: #619b8a;
+  font-weight: 450;
+}
+
+/* styling for links */
+a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+a:visited {
+  color: #263b34;
+}
+
+/* styling for bolding text */
+b {
+  font-weight: 550;
+}
+
+/* horizontal line between sections */
+hr {
+  border-top-color: var(--off-black);
+  background-color: var(--off-white);
+  height: 0.5rem;
+  border-top-width: 0.08rem;
+  opacity: 100%;
+}
+
+.paragraphSpacer {
+  height: 20px;
+}
+
+.sectionSpacer {
+  height: 120px;
+}
+
+.subsectionSpacer {
+  height: 60px;
+}
+
+/* styling for project info overview at top of a project page */
+.projectInfoContainer {
+  max-width: 50vw;
+  margin-left: 12vw;
+}
+
+.offsetCircleContent {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.circle {
+  width: 4vw;
+  height: 4vw;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+}
+
+.highlight {
+  /* background-color: var(--yellow); */
+  padding: 0px 2px;
+  background: linear-gradient(to top, var(--transparent-yellow) 35%, transparent 50%);
+  font-weight: 430;
+}
+
+.offsetText {
+  z-index: 2;
+  position: absolute;
+}
+
+.KeyNumber {
+  font-family: "Noto Serif Display", Palatino, serif;
+  font-size: 4rem;
+}
+
+.stat {
+  border-left: 3px solid var(--yellow);
+  padding-right: 3rem;
+  padding-left: 1rem;
+}
+
+ol li {
+  margin-bottom: 1rem;
+}
+
+#userstudy_dq_results {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+#boundarease_hifi_mockups {
+  max-width: 85%;
+  width: 85%;
+  margin: auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.hifi_mockups_background {
+  margin-top: var(--bs-gutter-y);
+  margin-left: calc(50% - 50vw);
+  min-width: 100vw;
+}
+
+#boundarease_hifi_mockups_background {
+  background-color: var(--pale-yellow);
+}
+
+#hineighbor_hifi_mockups_background {
+  background-color: var(--medium-green);
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+#footer {
+  background-color: var(--off-black);
+  height: 10rem;
+  margin-left: calc(50% - 50vw);
+  min-width: 100vw;
+  width: 100vw;
+  align-content: center;
+  padding: 0;
+}
+
+#footer_text {
+  color: var(--off-white);
+  font-family: "Noto Serif Display", Palatino, serif;
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+
+#footer_icons img {
+  height: 1.5rem;
+  padding-right: 2.5rem;
+}
+
+/* styling for bold and italic body, e.g. competitive analysis table in hi neighbor */
+.bold-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* styling for competitive analysis table in hi neighbor */
+#hi_neighbor_competitive_analysis li {
+  margin-bottom: 1rem;
+}
+
+#hi_neighbor_competitive_analysis .bold-italic {
+  margin-bottom: 0.25rem;
+}
+
+#hi_neighbor_competitive_analysis #first-column, #hi_neighbor_competitive_analysis #second-column {
+  border-right: 1.5px solid var(--grey);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.hi_neighbor_prototypeimg {
+  border: solid 2px var(--off-black);
+  margin-bottom: 1rem;
+}
+
+#shopgreen_desktop_sitemap {
+  position: relative;
+}
+
+#shopgreen_desktop_sitemap_caption {
+  position: absolute;
+  bottom: 0px;
+}
+
+.btn {
+  --bs-btn-font-weight: 350;
+  --bs-btn-bg: var(--medium-green);
+  --bs-btn-border-color: var(--medium-green);
+  --bs-btn-border-radius: .2rem;
+  --bs-btn-hover-color: var(--off-white);
+
+  --bs-btn-hover-bg: var(--cool-green);
+  --bs-btn-hover-border-color: var(--cool-green);
+
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+
+  --bs-btn-font-size: 0.8rem;
+}
+
+.filter-darkblue {
+  filter: invert(25%) sepia(49%) saturate(370%) hue-rotate(161deg) brightness(89%) contrast(92%);
+}
+
+.filter-coolgreen {
+  filter:  invert(61%) sepia(10%) saturate(1192%) hue-rotate(111deg) brightness(91%) contrast(85%);
+}
