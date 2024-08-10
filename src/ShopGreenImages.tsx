@@ -15,6 +15,14 @@ import mobile_wireframes from "./assets/project_images/shopgreen/mobile_wirefram
 import ui_kit from "./assets/project_images/shopgreen/ui_kit.png";
 import laptop_mockup from "./assets/project_images/shopgreen/laptop_mockup.png";
 import phone_mockup from "./assets/project_images/shopgreen/phone_mockup.png";
+import hifi_landingpage from "./assets/project_images/shopgreen/hifi_landingpage.png";
+import hifi_searchresults from "./assets/project_images/shopgreen/hifi_searchresults.png";
+import hifi_businessprofilepage from "./assets/project_images/shopgreen/hifi_businessprofilepage.png";
+import hifi_comparebusinesses from "./assets/project_images/shopgreen/hifi_comparebusinesses.png";
+import resource_pages from "./assets/project_images/shopgreen/resource_pages.png";
+import blog from "./assets/project_images/shopgreen/blog.png";
+import business_account_pages from "./assets/project_images/shopgreen/business_account_pages.png";
+import consumer_account_pages from "./assets/project_images/shopgreen/consumer_account_pages.png";
 
 export const images: { [key: string]: any } = {
   top_image: top_image,
@@ -34,4 +42,12 @@ export const images: { [key: string]: any } = {
   ui_kit: ui_kit,
   laptop_mockup: laptop_mockup,
   phone_mockup: phone_mockup,
+  hifi_landingpage: hifi_landingpage,
+  hifi_searchresults: hifi_searchresults,
+  hifi_businessprofilepage: hifi_businessprofilepage,
+  hifi_comparebusinesses: hifi_comparebusinesses,
+  resource_pages: resource_pages,
+  blog: blog,
+  business_account_pages: business_account_pages,
+  consumer_account_pages: consumer_account_pages,
 };

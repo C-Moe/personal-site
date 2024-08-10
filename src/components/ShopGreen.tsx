@@ -460,7 +460,8 @@ const ShopGreen = () => {
                 alt="moodboard images"
                 className=" row col-12 mt-2 mb-2"
               />
-              {/* TODO: insert prototypes, use code below */}
+              <div className="subsectionSpacer" />
+              <h4>clickable prototypes</h4>
               <div className="row mt-3">
                 <div className="col-7">
                   <img
@@ -503,146 +504,101 @@ const ShopGreen = () => {
           {/* hifi mockups */}
           <span
             className="hifi_mockups_background"
-            id="hineighbor_hifi_mockups_background"
+            id="shopgreen_hifi_mockups_background"
           >
             <div className="subsectionSpacer" />
-            <HeaderAndText title="bulletin" text="" type="project info" />
-            <div className="row projectImage">
-              <img
-                src={images["annotated_bulletin"]}
-                alt="annotated high-fidelity mockup of hi neighbor bulletin"
-              />
-            </div>
-            <div className="paragraphSpacer" />
+            <HeaderAndText title="landing page" text="" type="project info" />
             <div className="row projectImage justify-content-center">
               <img
-                src={images["additional_bulletin1"]}
-                alt="additional high-fidelity mockups of hi neighbor bulletin"
-                className="col-5"
-              />
-              <div className="col-1" />
-              <img
-                src={images["additional_bulletin2"]}
-                alt="additional high-fidelity mockups of hi neighbor bulletin"
-                className="col-5"
-              />
-            </div>
-
-            <div className="subsectionSpacer" />
-
-            <HeaderAndText title="in-unit" text="" type="project info" />
-
-            <div className="row projectImage justify-content-center">
-              <img
-                src={images["annotated_inunit_home"]}
-                alt="annotated high-fidelity mockup of hi neighbor in-unit screen"
+                src={images["hifi_landingpage"]}
+                alt="ShopGreen landing page on desktop and mobile"
                 className="col-10"
               />
             </div>
-
-            <div className="row projectImage justify-content-end">
-              <div className="col-7">
-                <div className="mb-2 fst-italic">messaging capabilities</div>
-                <img
-                  src={images["inunit_messaging"]}
-                  alt="high-fidelity mockup of hi neighbor in-unit screen's messaging feature"
-                  className="col-12"
-                />
-              </div>
-            </div>
-
-            <div className="subsectionSpacer" />
-
-            <div className="row projectImage">
-              <div className="col-12">
-                <div className="fst-italic">
-                  profile creation and onboarding
-                </div>
-                <img
-                  src={images["annotated_onboarding"]}
-                  alt="high-fidelity mockup of hi neighbor in-unit screen's onboarding experience"
-                  className="col-12"
-                />
-              </div>
-            </div>
-
             <div className="paragraphSpacer" />
-
-            <div className="row projectImage justify-content-end">
-              <div className="col-10">
-                <div className="mb-2 fst-italic">post customization</div>
-                <img
-                  src={images["post_customization"]}
-                  alt="high-fidelity mockup of hi neighbor in-unit screen's post customization feature"
-                  className="col-12"
-                />
-              </div>
-            </div>
-
-            <div className="subsectionSpacer" />
-
-            <div className="row projectImage">
-              <div className="col-7">
-                <div className="mb-2 fst-italic">neighbor profiles</div>
-                <img
-                  src={images["inunit_neighbors"]}
-                  alt="high-fidelity mockup of hi neighbor in-unit screen's neighbor profiles"
-                  className="col-12"
-                />
-              </div>
-            </div>
-
-            <div className="subsectionSpacer" />
-
-            <HeaderAndText title="welcome card" text="" type="project info" />
-
-            <div className="row projectImage">
+            <HeaderAndText title="search results" text="" type="project info" />
+            <div className="row projectImage justify-content-center">
               <img
-                src={images["welcome_card"]}
-                alt="hi neighbor welcome card"
+                src={images["hifi_searchresults"]}
+                alt="ShopGreen search results on desktop and mobile"
+                className="col-12"
               />
             </div>
 
             <div className="subsectionSpacer" />
 
             <HeaderAndText
-              title="onboarding experience + demo"
+              title="business profile page"
               text=""
               type="project info"
             />
 
-            <div className="row col-12">
-              <div className="embed-responsive col-6">
-                <iframe
-                  width="500"
-                  height="650"
-                  className="embed-responsive-item"
-                  src="https://www.youtube.com/embed/9u1TqpiGUzo?si=luPY4QpqzyJgWzhF&amp;controls=1"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className="col-4">
-                <img
-                  src={images["decision_tree"]}
-                  alt="decision tree for onboarding"
-                  className="img-fluid mb-4"
-                />
-                <div className="fst-italic mt-5">decision tree</div>
-              </div>
+            <div className="row projectImage justify-content-center">
+              <img
+                src={images["hifi_businessprofilepage"]}
+                alt="ShopGreen business profile pages on desktop and mobile"
+                className="col-12"
+              />
+            </div>
+
+            <HeaderAndText
+              title="compare businesses"
+              text=""
+              type="project info"
+            />
+
+            <div className="row projectImage justify-content-center">
+              <img
+                src={images["hifi_comparebusinesses"]}
+                alt="ShopGreen comparison tool on desktop and mobile"
+                className="col-12"
+              />
+            </div>
+
+            <div className="subsectionSpacer" />
+
+            <HeaderAndText title="resource pages" text="" type="project info" />
+            <div className="row projectImage">
+              <img
+                src={images["resource_pages"]}
+                alt="resources provided by ShopGreen for consumers and businesses"
+                className="col-12"
+              />
+            </div>
+
+            <div className="subsectionSpacer" />
+
+            <HeaderAndText title="blog" text="" type="project info" />
+            <div className="row projectImage justify-content-end">
+              <img
+                src={images["blog"]}
+                alt="blog pages on ShopGreen for desktop and mobile"
+                className="col-12"
+              />
+            </div>
+
+            <div className="subsectionSpacer" />
+
+            <HeaderAndText title="account pages" text="" type="project info" />
+            <div className="row projectImage">
+              <div className="mb-2 fst-italic">business account</div>
+              <img
+                src={images["business_account_pages"]}
+                alt="account pages for a business"
+                className="col-12"
+              />
+              <div className="subsectionSpacer" />
+              <div className="mb-2 fst-italic">consumer account</div>
+              <img
+                src={images["consumer_account_pages"]}
+                alt="account pages for a consumer"
+                className="col-12"
+              />
             </div>
 
             <div className="subsectionSpacer" />
           </span>
-          <div className="subsectionSpacer" />
-          <HeaderAndText title="ui kit" text="" type="project info" />
-          <div className="row projectImage">
-            <img src={images["ui_kit"]} alt="hi neighbor UI kit" />
-          </div>
 
-          <div className="sectionSpacer" />
           <Footer />
         </div>
       </div>

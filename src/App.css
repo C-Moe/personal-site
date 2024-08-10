@@ -9,6 +9,7 @@
   --medium-green: #A1C181;
   --cool-green: #619B8A;
   --dark-blue: #2E4657;
+  --yellow-green: #E7E08B;
 }
 
 
@@ -323,6 +324,12 @@ ol li {
 
 #hineighbor_hifi_mockups_background {
   background-color: var(--medium-green);
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+#shopgreen_hifi_mockups_background {
+  background-color: var(--yellow-green);
   padding-left: 8vw;
   padding-right: 8vw;
 }
