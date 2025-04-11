@@ -476,7 +476,7 @@ const ShopGreen = () => {
                       href="https://www.figma.com/proto/3PX2j7m0wPGmGlAsAqa0AT/Interaction-Design-Final-Project-Wireframes-v4?page-id=1920%3A1748&type=design&node-id=1920-1805&viewport=577%2C220%2C0.07&t=wC1FsUMC7bHhEQUO-1&scaling=min-zoom&starting-point-node-id=1920%3A1805&mode=design"
                       target="_blank"
                     >
-                      bulletin prototype
+                      desktop
                     </a>
                   </div>
                 </div>
@@ -493,7 +493,7 @@ const ShopGreen = () => {
                     href="https://www.figma.com/proto/3PX2j7m0wPGmGlAsAqa0AT/Interaction-Design-Final-Project-Wireframes-v4?page-id=2198%3A3380&type=design&node-id=2198-3381&viewport=1010%2C330%2C0.09&t=1zx6JKj5p5B7N5ZF-1&scaling=min-zoom&starting-point-node-id=2198%3A3381&show-proto-sidebar=1&mode=design"
                     target="_blank"
                   >
-                    in-unit prototype
+                    mobile
                   </a>
                 </div>
               </div>

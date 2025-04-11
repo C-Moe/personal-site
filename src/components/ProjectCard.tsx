@@ -1,15 +1,26 @@
 import { images } from "../ProjectPreviewImages";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = (props: {
   imgpath: string;
   title: string;
   projtype: string;
   desc: string;
+  navigateTo: string;
 }) => {
-  const { imgpath, title, projtype, desc } = props;
+  const { imgpath, title, projtype, desc, navigateTo } = props;
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(navigateTo);
+  };
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={handleCardClick}
+      style={{ cursor: "pointer" }}
+    >
       <div className="card-img">
         <img
           src={images[imgpath]}
