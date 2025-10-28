@@ -7,6 +7,7 @@
 import BoundarEase from "./components/BoundarEase";
 import Footer from "./components/Footer";
 import HiNeighbor from "./components/HiNeighbor";
+import Nav from "./components/Nav";
 import ProjectCard from "./components/ProjectCard";
 // TODO: remove
 import ShopGreen from "./components/ShopGreen";
@@ -74,17 +75,19 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className="appContainer">
       {/* <Projects /> */}
+      <Nav />
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <div className="container projectsContainer">
-                {/* TODO: update breakpoint */}
-                <div className="row row-cols-4 g-5">
+      <div className="mainContent">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="container projectsContainer">
+                  {/* TODO: update breakpoint */}
+                  {/*<div className="row row-cols-4 g-5">
                   {projects.map((project) => (
                     <ProjectCard
                       key={project.id}
@@ -95,17 +98,31 @@ function App() {
                       navigateTo={"/" + project.id}
                     />
                   ))}
+                </div>*/}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div className="card-title" style={{ fontStyle: "italic" }}>
+                      under construction...
+                    </div>
+                    <div style={{ color: "#474747" }}>be back soon!</div>
+                  </div>
                 </div>
-              </div>
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/boundarease" element={<BoundarEase />} />
-        <Route path="/hi-neighbor" element={<HiNeighbor />} />
-        <Route path="/shopgreen" element={<ShopGreen />} />
-      </Routes>
-    </>
+                {/* <Footer /> */}
+              </>
+            }
+          />
+          <Route path="/boundarease" element={<BoundarEase />} />
+          <Route path="/hi-neighbor" element={<HiNeighbor />} />
+          <Route path="/shopgreen" element={<ShopGreen />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   );
 }
 
