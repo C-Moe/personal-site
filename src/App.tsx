@@ -4,16 +4,16 @@
 
 // const images = require.context('../../images', true);
 // const imageList = images.keys().map(image => images(image));
-import BoundarEase from "./components/BoundarEase";
+// import BoundarEase from "./components/BoundarEase";
 import Footer from "./components/Footer";
-import HiNeighbor from "./components/HiNeighbor";
+// import HiNeighbor from "./components/HiNeighbor";
 import Nav from "./components/Nav";
-import ProjectCard from "./components/ProjectCard";
+// import ProjectCard from "./components/ProjectCard";
 // TODO: remove
-import ShopGreen from "./components/ShopGreen";
-import { Route, Routes, useNavigate } from "react-router-dom";
+// import ShopGreen from "./components/ShopGreen";
+// import { Route, Routes } from "react-router-dom";
 
-const projects: {
+/* const projects: {
   id: string;
   imgpath: string;
   title: string;
@@ -69,10 +69,10 @@ const projects: {
     projtype: "type study",
     desc: "A poster defining 21 typographical terms.",
   },
-];
+]; */
 
 function App() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div className="appContainer">
@@ -80,14 +80,14 @@ function App() {
       <Nav />
 
       <div className="mainContent">
-        <Routes>
+        {/* <Routes>
           <Route
             path="/"
             element={
-              <>
-                <div className="container projectsContainer">
-                  {/* TODO: update breakpoint */}
-                  {/*<div className="row row-cols-4 g-5">
+              <> */}
+        <div className="container projectsContainer">
+          {/* TODO: update breakpoint */}
+          {/*<div className="row row-cols-4 g-5">
                   {projects.map((project) => (
                     <ProjectCard
                       key={project.id}
@@ -99,27 +99,27 @@ function App() {
                     />
                   ))}
                 </div>*/}
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div className="card-title" style={{ fontStyle: "italic" }}>
-                      under construction...
-                    </div>
-                    <div style={{ color: "#474747" }}>be back soon!</div>
-                  </div>
-                </div>
-                {/* <Footer /> */}
-              </>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <div className="card-title" style={{ fontStyle: "italic" }}>
+              under construction...
+            </div>
+            <div style={{ color: "#474747" }}>be back soon!</div>
+          </div>
+        </div>
+        {/* <Footer /> */}
+        {/* </>
             }
           />
           <Route path="/boundarease" element={<BoundarEase />} />
           <Route path="/hi-neighbor" element={<HiNeighbor />} />
           <Route path="/shopgreen" element={<ShopGreen />} />
-        </Routes>
+        </Routes> */}
       </div>
       <Footer />
     </div>
