@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://c-moe.github.io/personal-site/",
+  "homepage": "https://cassandramoe.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
