@@ -1,26 +1,15 @@
 import { images } from "../ProjectPreviewImages";
-// import { useNavigate } from "react-router-dom";
 
 const ProjectCard = (props: {
   imgpath: string;
   title: string;
   projtype: string;
   desc: string;
-  // navigateTo: string;
 }) => {
   const { imgpath, title, projtype, desc } = props;
-  // const navigate = useNavigate();
-
-  // const handleCardClick = () => {
-  //   navigate(navigateTo);
-  // };
 
   return (
-    <div
-      className="card"
-      // onClick={handleCardClick}
-      style={{ cursor: "pointer" }}
-    >
+    <div className="card" style={{ cursor: "pointer" }}>
       <div className="card-img">
         <img
           src={images[imgpath]}
@@ -34,7 +23,6 @@ const ProjectCard = (props: {
       <div className="card-body">
         <div className="card-title">{title}</div>
         <p className="card-text">{projtype}</p>
-        {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import { images } from "../BoundareaseImages";
-import Footer from "./Footer";
-import HeaderAndText from "./HeaderAndText";
-import HighlightedNumber from "./HighlightedNumber";
-import ProjectInfo from "./ProjectInfo";
+import Footer from "../components/Footer";
+import HeaderAndText from "../components/HeaderAndText";
+import HighlightedNumber from "../components/HighlightedNumber";
+import ProjectInfo from "../components/ProjectInfo";
 
 const info: IProjectInfo = {
   year: "2023",
