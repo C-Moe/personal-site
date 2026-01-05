@@ -35,13 +35,13 @@ const projects: {
     projtype: "ux, concept",
     desc: "A digital bulletin board experience to encourage and support relationships in hyperlocal communities via user-generated content.",
   },
-  //   {
-  //     id: "shopgreen",
-  //     imgpath: "shopgreen",
-  //     title: "ShopGreen",
-  //     projtype: "ui, concept",
-  //     desc: "A curated database for consumers aiming to shop more sustainably.",
-  //   },
+  {
+    id: "shopgreen",
+    imgpath: "shopgreen",
+    title: "ShopGreen",
+    projtype: "ui, concept",
+    desc: "A curated database for consumers aiming to shop more sustainably.",
+  },
   //   {
   //     id: "neu-voters",
   //     imgpath: "neu voters",
@@ -49,27 +49,27 @@ const projects: {
   //     projtype: "ux, concept",
   //     desc: "A campaign designed to address low young-voter turnout in the United States, particularly among college students voting out-of-state.",
   //   },
-  //   {
-  //     id: "country",
-  //     imgpath: "country",
-  //     title: "Country at a Glance — Canada",
-  //     projtype: "information design",
-  //     desc: "An infographic poster providing 27 high-level data points. 38 x 24 in.",
-  //   },
-  //   {
-  //     id: "typesetting",
-  //     imgpath: "typesetting",
-  //     title: "Typesetting Exploration",
-  //     projtype: "type study",
-  //     desc: "45 compositions exploring placement, orientation, contrast, motion, hierarchy, etc.",
-  //   },
-  //   {
-  //     id: "type-at-sea",
-  //     imgpath: "type at sea",
-  //     title: "Type at Sea — Poster",
-  //     projtype: "type study",
-  //     desc: "A poster defining 21 typographical terms.",
-  //   },
+  {
+    id: "country",
+    imgpath: "country",
+    title: "Country at a Glance — Canada",
+    projtype: "information design",
+    desc: "An infographic poster providing 27 high-level data points. 38 x 24 in.",
+  },
+  {
+    id: "typesetting",
+    imgpath: "typesetting",
+    title: "Typesetting Exploration",
+    projtype: "type study",
+    desc: "45 compositions exploring placement, orientation, contrast, motion, hierarchy, etc.",
+  },
+  {
+    id: "type-at-sea",
+    imgpath: "type at sea",
+    title: "Type at Sea — Poster",
+    projtype: "type study",
+    desc: "A poster defining 21 typographical terms.",
+  },
 ];
 
 const Home = () => {
@@ -81,7 +81,10 @@ const Home = () => {
       <div className="mainContent">
         <div className="container projectsContainer">
           {/* TODO: update breakpoint */}
-          <div className="row row-cols-4 g-5" style={{ width: "100%" }}>
+          <div
+            className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+            style={{ width: "100%" }}
+          >
             {projects.map((project) => (
               <Link to={"/" + project.id} style={{ textDecoration: "none" }}>
                 <ProjectCard

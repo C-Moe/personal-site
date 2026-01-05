@@ -75,7 +75,7 @@ h6 {
   /* removes border */
   --bs-card-border-width: 0px;
 
-  padding-bottom: 50px;
+  padding-bottom: calc(1vw + 20px);
 
   /* transition when mouse leaves card, chrome & safari and firefox  */
   transition: 0.25s ease-in-out;
@@ -87,8 +87,7 @@ h6 {
 
 /* styling for image above card */
 .card-img-top {
-  width: 100%;
-  height: 17vw;
+  aspect-ratio: 4/2.5;
   object-fit: cover;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -102,8 +101,7 @@ h6 {
 /* for shading and text overlay above card image */
 .card-img-overlay {
   border-radius: 0;
-  height: 17vw;
-  width: 100%;
+  aspect-ratio: 4/2.5;
   padding: 16px;
   vertical-align: middle;
   opacity: 0;
@@ -125,6 +123,7 @@ h6 {
 .card-img-overlay .card-text-overlay {
   max-width: 90%;
   margin-bottom: 0px;
+  font-weight: 350;
 }
 
 /* reveals card image overlays on hover */
@@ -134,9 +133,9 @@ h6 {
 
 /* translates card on hover, chrome & safari and firefox  */
 .card:hover {
-  transform: translate(0, -2rem);
-  -webkit-transform: translate(0, -2rem);
-  -ms-transform: translate(0, -2rem);
+  transform: translate(0, -10px);
+  -webkit-transform: translate(0, -10px);
+  -ms-transform: translate(0, -10px);
 
   transition: 0.25s ease-in-out;
   -webkit-transition: 0.25s ease-in-out;
@@ -398,17 +397,6 @@ ol li {
   padding-right: 20px;
 }
 
-/* adds padding to match text when at small breakpoint */
-@media (max-width: 575.98px) {
-  #footer_icons {
-    padding-left: 20px;
-  }
-
-  #footer_icons img {
-    float: left;
-  }
-}
-
 /* styling for bold and italic body, e.g. competitive analysis table in hi neighbor */
 .bold-italic {
   font-weight: 500;
@@ -470,4 +458,36 @@ ol li {
 .filter-coolgreen {
   filter: invert(61%) sepia(10%) saturate(1192%) hue-rotate(111deg)
     brightness(91%) contrast(85%);
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* adds padding to match text when at small breakpoint */
+  #footer_icons {
+    padding-left: 20px;
+  }
+
+  #footer_icons img {
+    float: left;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ...; */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /* ...; */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /* ...; */
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  /* ...; */
 }
