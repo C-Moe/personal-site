@@ -4,6 +4,10 @@ import HeaderAndText from "../components/HeaderAndText";
 import HighlightedNumber from "../components/HighlightedNumber";
 import ProjectInfo from "../components/ProjectInfo";
 import ProjectSubtitles from "../components/ProjectSubtitles";
+import {
+  sectionContentColumnSpacing,
+  sectionHeaderColumnSpacing,
+} from "../constants";
 
 const info: IProjectInfo = {
   year: "2023",
@@ -22,7 +26,7 @@ const BoundarEase = () => {
         alt="Mockup of BoundarEase"
       />
       <div className="projectPageContent">
-        <h1 className="projectTitle">BoundarEase</h1>
+        <h1>BoundarEase</h1>
         <ProjectSubtitles
           subtitle1={
             "A web platform for community members to explore potential school attendance boundaries based on their preferences and offer feedback."
@@ -35,59 +39,20 @@ const BoundarEase = () => {
 
         <div className="sectionSpacer" />
 
-        {/* overview */}
-        {/*         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
-            <HeaderAndText type="section header" title="overview" text={""} />
-          </div>
-          <div className="col-6">
-            A project of{" "}
-            <a href="https://www.pluralconnections.org/" target="_blank">
-              Plural Connections Group
-            </a>
-            , BoundarEase is a web platform that allows community members to{" "}
-            <span className="highlight">
-              explore potential school attendance boundaries
-            </span>{" "}
-            based on their preferences and offer feedback.
-            <div className="paragraphSpacer" />
-            It aims to{" "}
-            <span className="highlight">facilitate community engagement</span>,
-            as well as foster{" "}
-            <span className="highlight">
-              more equitable student assignment policies
-            </span>
-            .
-            <div className="subsectionSpacer" />
-            <img
-              src={images["overview_mockup"]}
-              alt="laptop mockup of BoundarEase"
-              className="col-12"
-            />
-          </div>
-        </div> */}
-
         {/* <div className="sectionSpacer" /> */}
 
-        {/* process */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          {/* process */}
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
             <HeaderAndText type="section header" title="process" text={""} />
+            <div className="fst-italic">
+              formative study {"->"} ideation / design {"->"} development {"->"}{" "}
+              user study
+            </div>
           </div>
-          <div className="col-6 fst-italic">
-            formative study {"->"} ideation / design {"->"} development {"->"}{" "}
-            user study
-          </div>
-        </div>
-
-        <div className="sectionSpacer" />
-
-        {/* background */}
-        <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          {/* background */}
+          <div className={sectionContentColumnSpacing}>
             <HeaderAndText type="section header" title="background" text={""} />
-          </div>
-          <div className="col-6">
             The{" "}
             <a href="https://www.pluralconnections.org/" target="_blank">
               Plural Connections Group
@@ -105,24 +70,26 @@ const BoundarEase = () => {
             , community engagement in their process.
             <div className="paragraphSpacer" />
             Working with the district and subject matter experts (SMEs), I along
-            with two other group members designed a technology-based solution,
+            with two other colleagues designed a technology-based solution,
             "BoundarEase."
           </div>
         </div>
 
         <div className="sectionSpacer" />
+        <hr />
+        <div className="sectionSpacer" />
 
         {/* formative study */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
             <HeaderAndText
               type="section header"
               title="formative study"
               text={"Gaining a better understanding of user challenges"}
             />
           </div>
-          <div className="col-6">
-            {/* <hr /> */}A teammate and I conducted{" "}
+          <div className={sectionContentColumnSpacing}>
+            A teammate and I conducted{" "}
             <span className="highlight">16 semi-structured interviews</span>{" "}
             with parents who were actively going through the change to better
             understand the challenges around participating in community
@@ -163,35 +130,23 @@ const BoundarEase = () => {
             upon in the past.
           </div>
         </div>
-
-        {/* <div className="paragraphSpacer" />
-        <div className="row projectImage">
-          <img
-            src={images["themes"]}
-            // TODO
-            alt="example notes from interviews supporting each theme"
-          />
-        </div> */}
-
+        <div className="sectionSpacer" />
+        <hr />
         <div className="sectionSpacer" />
 
         {/* design questions */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
             <HeaderAndText
               type="section header"
               title="design questions"
               text={"Motivating our design with three questions"}
             />
           </div>
-          <div className="col-6 d-grid">
-            <hr />
+          <div className={sectionContentColumnSpacing + " d-grid"}>
             We combined our findings from the formative study and our own
             hypotheses to define the following three questions.
-            {/* <div className="d-flex justify-content-center">
-              <HighlightedNumber num="1" />
-            </div> */}
-            <div
+            {/* <div
               className="mb-4 m-auto d-flex"
               style={{ alignItems: "baseline" }}
             >
@@ -199,39 +154,69 @@ const BoundarEase = () => {
               Can helping families see how they are embedded in a connected
               system increase their awareness of how certain policies,
               particularly their own preferences, might impact other families?
+            </div> */}
+            <div className="row">
+              <div className="col-12">
+                <div className="stat-item d-flex align-items-start">
+                  <div className="stat-badge">
+                    <span className="stat-number">1</span>
+                  </div>
+
+                  <p className="stat-text mb-0">
+                    Can helping families see how they are embedded in a
+                    connected system increase their awareness of how certain
+                    policies, particularly their own preferences, might impact
+                    other families?
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="d-flex justify-content-center">
+            <div
+              className="mb-4 m-auto d-flex"
+              style={{ alignItems: "baseline" }}
+            >
               <HighlightedNumber num="2" />
-            </div>
-            <div className="text-center mb-4 col-9 m-auto">
               Can exposing families to the individual perspectives of those
               adversely affected by their policy priorities lead them to
               moderate their policy preferences?
             </div>
-            <div className="d-flex justify-content-center">
+            {/* <div className="text-center mb-4 col-9 m-auto"> */}
+            {/* Can exposing families to the individual perspectives of those
+            adversely affected by their policy priorities lead them to moderate
+            their policy preferences? */}
+            {/* </div> */}
+            <div
+              className="mb-4 m-auto d-flex"
+              style={{ alignItems: "baseline" }}
+            >
               <HighlightedNumber num="3" />
-            </div>
-            <div className="text-center col-9 m-auto">
               If the redistricting goals of the district are presented through a
               shared vocabulary or set of community values, can it increase
               community trust in the district’s decision-making process?
             </div>
+            {/* <div className="text-center col-9 m-auto"> */}
+            {/* If the redistricting goals of the district are presented through a
+            shared vocabulary or set of community values, can it increase
+            community trust in the district’s decision-making process? */}
+            {/* </div> */}
           </div>
-          <div className="paragraphSpacer" />
-
+          <div className="sectionSpacer" />
+          <hr />
           <div className="sectionSpacer" />
 
           {/* ideation */}
           <div className="row">
-            <div className="col-4 sectionHeaderColumn">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
               <HeaderAndText
                 type="section header"
                 title="ideation"
                 text={"Leading a design sprint and expanding on ideas"}
               />
             </div>
-            <div className="col-6">
-              <hr />
+            <div className={sectionContentColumnSpacing}>
+              {/* <hr /> */}
               Next, I led a sprint to ideate possible solutions. With the above
               research in mind, we brainstormed answers to four{" "}
               {/* <a
@@ -282,18 +267,21 @@ const BoundarEase = () => {
           </div>
 
           <div className="sectionSpacer" />
-
+          <hr />
+          <div className="sectionSpacer" />
           {/* design */}
           <div className="row">
-            <div className="col-4 sectionHeaderColumn">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
               <HeaderAndText
                 type="section header"
                 title="design: a new feedback experience"
                 text={"Streamlining information and scaffolding feedback"}
               />
             </div>
-            <div className="col-6">
-              <hr />
+            <div className={sectionContentColumnSpacing}>
+              {/* <hr /> */}
               There were five high-level considerations we wanted to keep in
               mind.
               <div className="paragraphSpacer" />
@@ -381,8 +369,8 @@ const BoundarEase = () => {
 
           <div className="row">
             <div className="subsectionSpacer" />
-            <div className="col-4" />
-            <div className="col-6">
+            <div className={sectionHeaderColumnSpacing} />
+            <div className={sectionContentColumnSpacing}>
               Instead of asking a binary question ("Do you like this scenario?")
               as the previous surveys had done, we gave the user a five-star
               scale to rate the scenario. The user is then provided an open
@@ -401,113 +389,123 @@ const BoundarEase = () => {
               Once they submit, they are shown a simple thank you screen and
               possibly given next steps or ways of contacting the school.{" "}
             </div>
+          </div>
+          <div className="sectionSpacer" />
+          <hr />
+          <div className="sectionSpacer" />
 
-            <div className="sectionSpacer" />
-
-            {/* user study + outcomes */}
-            <div className="row">
-              <div className="col-4 sectionHeaderColumn">
-                <HeaderAndText
-                  type="section header"
-                  title="user study & outcomes"
-                  text={"Evaluating BoundarEase as a tool"}
+          {/* user study + outcomes */}
+          <div className="row">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
+              <HeaderAndText
+                type="section header"
+                title="user study & outcomes"
+                text={"Evaluating BoundarEase as a tool"}
+              />
+            </div>
+            <div className={sectionContentColumnSpacing}>
+              We assessed BoundarEase by conducting{" "}
+              <span className="highlight">12 semi-structured</span> interviews,
+              asking participants to think aloud as they interacted with a
+              desktop version of the platform and answered periodic questions. A
+              teammate and I then synthesized the data with thematic coding,
+              segmenting the interviews into units and assigning each unit a
+              code for analysis.
+              <div className="row projectImage">
+                <img
+                  src={images["user_study"]}
+                  alt="qualitative coding to analyze user study feedback"
                 />
               </div>
-              <div className="col-6">
-                <hr />
-                We assessed BoundarEase by conducting{" "}
-                <span className="highlight">12 semi-structured</span>{" "}
-                interviews, asking participants to think aloud as they
-                interacted with a desktop version of the platform and answered
-                periodic questions. A teammate and I then synthesized the data
-                with thematic coding, segmenting the interviews into units and
-                assigning each unit a code for analysis.
-                <div className="row projectImage">
-                  <img
-                    src={images["user_study"]}
-                    alt="qualitative coding to analyze user study feedback"
-                  />
-                </div>
-                <div className="row">
-                  <div className="col-6 stat">
-                    <div className="KeyNumber">100%</div>
+              <div className="row g-4">
+                <div className="stat">
+                  <div className="KeyNumber">100%</div>
+                  <div>
                     stated BoundarEase was clearer in how new boundaries would
                     affect their families and others compared to the current
                     process
                   </div>
-                  <div className="col-6 stat">
-                    <div className="KeyNumber">82%</div>
+                </div>
+                <div className="stat">
+                  <div className="KeyNumber">82%</div>
+                  <div>
                     believed BoundarEase helped them understand how others might
                     be affected and/or what they care about
                   </div>
-                  <div className="subsectionSpacer" />
-                  We also found that participants really appreciated the
-                  scaffolded qualitative feedback experience, brevity and
-                  relevance of included information, and interactivity of the
-                  platform (e.g. personalized statistics and ability to toggle
-                  between different scenarios).
-                  <div className="paragraphSpacer" />
-                  Per our design questions, we found
-                  <ol id="userstudy_dq_results">
-                    <li>
-                      Placing families in the context of the community prompted
-                      participants to think about impacts on others. However,
-                      this didn't resolve cognitive dissonance that the
-                      scenarios they saw as beneficial to them were the same
-                      scenarios that were detrimental to others.
-                    </li>
-                    <li>
-                      The perspective-getting feature was met with mixed
-                      reactions; some parents thought it would add healthy
-                      friction, while others wanted a more diverse sample of
-                      perspectives or skipped it entirely.
-                    </li>
-                    <li>
-                      Overall, interviewees felt that framing a scenario through
-                      the four pillars was extremely helpful in grounding the
-                      conversation; they could discuss the potential districting
-                      with the board and other parents more "rationally" than
-                      emotionally.
-                    </li>
-                  </ol>
                 </div>
-              </div>
-              <div className="sectionSpacer" />
-
-              {/* future work */}
-              <div className="row">
-                <div className="col-4 sectionHeaderColumn">
-                  <HeaderAndText
-                    type="section header"
-                    title="next steps"
-                    text={"Iterating and thinking towards the future"}
-                  />
-                </div>
-                <div className="col-6">
-                  <hr />
-                  Our next steps would be to iterate based on the feedback we
-                  received to deploy at a larger scale.
-                  <div className="paragraphSpacer" />
-                  In particular, we would address
-                  <ul>
-                    <li>confusing visualizations,</li>
-                    <li>
-                      the wording of certain statistics to make them more
-                      comprehensive,
-                    </li>
-                    <li>the perspective-getting feature,</li>
-                    <li>
-                      establishing when and how to use this tool in the
-                      redistricting process, and
-                    </li>
-                    <li>polishing the visuals overall.</li>
-                  </ul>
-                </div>
-                <div className="sectionSpacer" />
-                <Footer />
+                <div className="paragraphSpacer" />
+                We also found that participants really appreciated the
+                scaffolded qualitative feedback experience, brevity and
+                relevance of included information, and interactivity of the
+                platform (e.g. personalized statistics and ability to toggle
+                between different scenarios).
+                <div className="paragraphSpacer" />
+                Per our design questions, we found
+                <ol id="userstudy_dq_results">
+                  <li>
+                    Placing families in the context of the community prompted
+                    participants to think about impacts on others. However, this
+                    didn't resolve cognitive dissonance that the scenarios they
+                    saw as beneficial to them were the same scenarios that were
+                    detrimental to others.
+                  </li>
+                  <li>
+                    The perspective-getting feature was met with mixed
+                    reactions; some parents thought it would add healthy
+                    friction, while others wanted a more diverse sample of
+                    perspectives or skipped it entirely.
+                  </li>
+                  <li>
+                    Overall, interviewees felt that framing a scenario through
+                    the four pillars was extremely helpful in grounding the
+                    conversation; they could discuss the potential districting
+                    with the board and other parents more "rationally" than
+                    emotionally.
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
+          <div className="sectionSpacer" />
+          <hr />
+          <div className="sectionSpacer" />
+
+          {/* future work */}
+          <div className="row">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
+              <HeaderAndText
+                type="section header"
+                title="next steps"
+                text={"Iterating and thinking towards the future"}
+              />
+            </div>
+            <div className={sectionContentColumnSpacing}>
+              {/* <hr /> */}
+              Our next steps would be to iterate based on the feedback we
+              received to deploy at a larger scale.
+              <div className="paragraphSpacer" />
+              In particular, we would address
+              <ul>
+                <li>confusing visualizations,</li>
+                <li>
+                  the wording of certain statistics to make them more
+                  comprehensive,
+                </li>
+                <li>the perspective-getting feature,</li>
+                <li>
+                  establishing when and how to use this tool in the
+                  redistricting process, and
+                </li>
+                <li>polishing the visuals overall.</li>
+              </ul>
+            </div>
+            <div className="sectionSpacer" />
+          </div>
+          <Footer />
         </div>
       </div>
     </div>

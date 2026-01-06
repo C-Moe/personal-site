@@ -4,21 +4,23 @@ const ProjectInfo = (props: { info: IProjectInfo }) => {
   const { info } = props;
 
   return (
-    <div className="projectInfoContainer">
+    <div>
       {/* year + project role */}
-      <div className="row">
-        <div className="col-12 col-md-3">
-          <HeaderAndText type="project info" title="year" text={info.year} />
-          <HeaderAndText
-            type="project info"
-            title="project role"
-            text={info.projectRole}
-          />
+      <div className="row mb-4">
+        <div className="col-12 col-md-3 offset-md-1 sectionHeaderColumn d-flex projectInfoLeftCol">
+          <div>
+            <HeaderAndText type="project info" title="year" text={info.year} />
+            <HeaderAndText
+              type="project info"
+              title="project role"
+              text={info.projectRole}
+            />
+          </div>
         </div>
-        <div className="col-1" />
+        {/* <div className="col-1" /> */}
 
         {/* deliverables + skills + tools */}
-        <div className="col-12 col-md-8">
+        <div className="col-12 col-md-8 col-lg-6 offset-lg-1">
           <HeaderAndText
             type="project info"
             title="deliverables"
