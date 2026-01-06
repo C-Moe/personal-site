@@ -4,10 +4,10 @@ const ProjectInfo = (props: { info: IProjectInfo }) => {
   const { info } = props;
 
   return (
-    <div className="container projectInfoContainer">
+    <div className="projectInfoContainer">
       {/* year + project role */}
       <div className="row">
-        <div className="col-3">
+        <div className="col-12 col-md-3">
           <HeaderAndText type="project info" title="year" text={info.year} />
           <HeaderAndText
             type="project info"
@@ -18,7 +18,7 @@ const ProjectInfo = (props: { info: IProjectInfo }) => {
         <div className="col-1" />
 
         {/* deliverables + skills + tools */}
-        <div className="col-8">
+        <div className="col-12 col-md-8">
           <HeaderAndText
             type="project info"
             title="deliverables"

@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import HeaderAndText from "../components/HeaderAndText";
 import HighlightedNumber from "../components/HighlightedNumber";
 import ProjectInfo from "../components/ProjectInfo";
+import ProjectSubtitles from "../components/ProjectSubtitles";
 
 const info: IProjectInfo = {
   year: "2023",
@@ -22,12 +23,20 @@ const BoundarEase = () => {
       />
       <div className="projectPageContent">
         <h1 className="projectTitle">BoundarEase</h1>
+        <ProjectSubtitles
+          subtitle1={
+            "A web platform for community members to explore potential school attendance boundaries based on their preferences and offer feedback."
+          }
+          subtitle2={
+            "It aims to facilitate community engagement, as well as foster more equitable student assignment policies."
+          }
+        />
         <ProjectInfo info={info} />
 
         <div className="sectionSpacer" />
 
         {/* overview */}
-        <div className="row">
+        {/*         <div className="row">
           <div className="col-4 sectionHeaderColumn">
             <HeaderAndText type="section header" title="overview" text={""} />
           </div>
@@ -56,9 +65,9 @@ const BoundarEase = () => {
               className="col-12"
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className="sectionSpacer" />
+        {/* <div className="sectionSpacer" /> */}
 
         {/* process */}
         <div className="row">
@@ -79,17 +88,12 @@ const BoundarEase = () => {
             <HeaderAndText type="section header" title="background" text={""} />
           </div>
           <div className="col-6">
-            Plural Connections' mission is to use tools from data science and
-            design to advance pluralism: an inclusive response to diversity in
-            society. It focuses especially on inclusive education and mindful
-            media consumption and sharing.
-            <div className="paragraphSpacer" />
-            So, one project we took on was in{" "}
-            <span className="highlight">
-              collaboration with a large US public school district
-            </span>{" "}
-            serving nearly 150,000 students . At the start of the project, the
-            district was{" "}
+            The{" "}
+            <a href="https://www.pluralconnections.org/" target="_blank">
+              Plural Connections Group
+            </a>{" "}
+            collaborated with a large US public school district (~150,000
+            students) that was{" "}
             <span className="highlight">
               changing their school attendance boundaries
             </span>
@@ -103,8 +107,6 @@ const BoundarEase = () => {
             Working with the district and subject matter experts (SMEs), I along
             with two other group members designed a technology-based solution,
             "BoundarEase."
-            <div className="paragraphSpacer" />
-            {/* TODO: laptop mockup */}
           </div>
         </div>
 
@@ -120,14 +122,14 @@ const BoundarEase = () => {
             />
           </div>
           <div className="col-6">
-            <hr />A teammate and I conducted{" "}
+            {/* <hr /> */}A teammate and I conducted{" "}
             <span className="highlight">16 semi-structured interviews</span>{" "}
             with parents who were actively going through the change to better
             understand the challenges around participating in community
             engagement initiatives for attendance boundary planning. We
             synthesized recurring themes and consolidated ideas by creating an
-            affinity diagram from our notes and transcripts, finding three major
-            patterns.
+            affinity diagram from our notes and transcripts,{" "}
+            <span className="highlight">finding three major patterns.</span>
             <div className="row projectImage">
               <img
                 src={images["affinity_diagrams"]}
@@ -186,10 +188,14 @@ const BoundarEase = () => {
             <hr />
             We combined our findings from the formative study and our own
             hypotheses to define the following three questions.
-            <div className="d-flex justify-content-center">
+            {/* <div className="d-flex justify-content-center">
               <HighlightedNumber num="1" />
-            </div>
-            <div className="text-center mb-4 col-9 m-auto">
+            </div> */}
+            <div
+              className="mb-4 m-auto d-flex"
+              style={{ alignItems: "baseline" }}
+            >
+              <HighlightedNumber num="1" />
               Can helping families see how they are embedded in a connected
               system increase their awareness of how certain policies,
               particularly their own preferences, might impact other families?
@@ -226,23 +232,22 @@ const BoundarEase = () => {
             </div>
             <div className="col-6">
               <hr />
-              Next, I led a sprint to help us come up with possible solutions.
-              With the above research in mind, we brainstormed answers to four{" "}
-              <a
+              Next, I led a sprint to ideate possible solutions. With the above
+              research in mind, we brainstormed answers to four{" "}
+              {/* <a
                 href="https://www.nngroup.com/articles/how-might-we-questions/"
                 target="_blank"
-              >
-                How might we" questions
-              </a>
-              , expanding with{" "}
-              <a
+              > */}
+              How might we" questions
+              {/* </a> */}, expanding with{" "}
+              {/* <a
                 href="https://boardofinnovation.com/staff_picks/50-what-if-questions-to-reimagine-the-future/"
                 target="_blank"
-              >
-                "What if" questions
-              </a>{" "}
-              if helpful. We wrote our ideas and potential features individually
-              on Post-it notes and clustered similar ideas together.
+              > */}
+              "What if" questions
+              {/* </a>{" "} */} if helpful. We wrote our ideas and potential
+              features individually on Post-it notes and clustered similar ideas
+              together.
               <div className="paragraphSpacer" />
               We then brainstormed potential platforms, using our similar ideas
               as a starting point. Some possibilities included a chat app to
@@ -250,7 +255,7 @@ const BoundarEase = () => {
               receipts," and a "choose your own adventure" app for a more
               engaging experience that could also encourage empathy.
               <div className="paragraphSpacer" />
-              We initially settled on a website that would revolve around a
+              Initially, we settled on a website that would revolve around a
               timeline, with elements that highlighted feedback events, as well
               as documented the process. We saw positive reactions when we
               talked with the school and SMEs, but felt that the idea was not

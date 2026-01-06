@@ -14,7 +14,11 @@ const HeaderAndText = (props: {
   return (
     <div>
       {type == "section header" ? <h3>{title}</h3> : <h5>{title}</h5>}
-      <p>{text}</p>
+      {type == "section header" ? (
+        <div className="projectSubtitle2">{text}</div>
+      ) : (
+        <p>{text}</p>
+      )}
     </div>
   );
 };

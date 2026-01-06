@@ -79,8 +79,20 @@ const Home = () => {
       <Nav />
 
       <div className="mainContent">
+        <div className="container homepageHeaderContainer mb-3">
+          <h3
+            style={{
+              textTransform: "none",
+              fontWeight: 400,
+              letterSpacing: "-0.1px",
+              marginRight: "10px",
+            }}
+          >
+            Hi, I'm Cassandra
+          </h3>
+          <div>// UX designer and occasional developer driven by the why</div>
+        </div>
         <div className="container projectsContainer">
-          {/* TODO: update breakpoint */}
           <div
             className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
             style={{ width: "100%" }}
