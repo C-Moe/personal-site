@@ -157,7 +157,7 @@ const BoundarEase = () => {
             </div> */}
             <div className="row">
               <div className="col-12">
-                <div className="stat-item d-flex align-items-start">
+                <div className="stat-item">
                   <div className="stat-badge">
                     <span className="stat-number">1</span>
                   </div>

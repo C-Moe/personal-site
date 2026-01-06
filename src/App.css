@@ -329,28 +329,29 @@ hr {
   position: relative;
 }
 
-.stat-item {
+/* .stat-item {
   gap: clamp(1rem, 3vw, 2rem);
-}
+} */
 
 /* Wrapper for number + circle */
 .stat-badge {
   position: relative;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Yellow circle */
 .stat-badge::before {
   content: "";
   position: absolute;
-  width: clamp(3rem, 7vw, 5rem);
-  height: clamp(3rem, 7vw, 5rem);
+  width: clamp(3rem, 5vw, 3rem);
+  height: clamp(3rem, 7vw, 3rem);
   border-radius: 50%;
   background-color: #f6c85f;
 
   /* Offset */
   top: -10px;
-  left: 10px;
+  /* left: 5px; */
 
   z-index: 0;
 }
