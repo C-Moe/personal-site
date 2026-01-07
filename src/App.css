@@ -321,49 +321,12 @@ hr {
 }
 
 .circle {
-  width: 4vw;
-  height: 4vw;
+  width: clamp(3rem, 5vw, 3rem);
+  height: clamp(3rem, 5vw, 3rem);
   background-color: var(--yellow);
   border-radius: 50%;
   z-index: 1;
   position: relative;
-}
-
-/* .stat-item {
-  gap: clamp(1rem, 3vw, 2rem);
-} */
-
-/* Wrapper for number + circle */
-.stat-badge {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* Yellow circle */
-.stat-badge::before {
-  content: "";
-  position: absolute;
-  width: clamp(3rem, 5vw, 3rem);
-  height: clamp(3rem, 7vw, 3rem);
-  border-radius: 50%;
-  background-color: #f6c85f;
-
-  /* Offset */
-  top: -10px;
-  /* left: 5px; */
-
-  z-index: 0;
-}
-
-/* Number */
-.stat-number {
-  position: relative;
-  z-index: 1;
-
-  font-family: serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1;
 }
 
 .highlight {

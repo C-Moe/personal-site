@@ -63,15 +63,15 @@ const BoundarEase = () => {
               changing their school attendance boundaries
             </span>
             , i.e. boundaries that school districts draw to determine which
-            neighborhoods are assigned to which schools. It wanted to foster{" "}
+            neighborhoods are assigned to which schools. The district wanted to{" "}
             <span className="highlight">
-              more, as well as more constructive
+              foster more, as well as more constructive
             </span>
             , community engagement in their process.
             <div className="paragraphSpacer" />
-            Working with the district and subject matter experts (SMEs), I along
-            with two other colleagues designed a technology-based solution,
-            "BoundarEase."
+            Working with district administrators and subject matter experts
+            (SMEs), I along with two colleagues designed the technology-based
+            solution, "BoundarEase."
           </div>
         </div>
 
@@ -89,13 +89,13 @@ const BoundarEase = () => {
             />
           </div>
           <div className={sectionContentColumnSpacing}>
-            A teammate and I conducted{" "}
+            We conducted{" "}
             <span className="highlight">16 semi-structured interviews</span>{" "}
-            with parents who were actively going through the change to better
-            understand the challenges around participating in community
-            engagement initiatives for attendance boundary planning. We
-            synthesized recurring themes and consolidated ideas by creating an
-            affinity diagram from our notes and transcripts,{" "}
+            with parents who were going through the change to better understand
+            the challenges of participating in community engagement initiatives
+            for boundary planning. We synthesized recurring themes and
+            consolidated ideas by creating an affinity diagram from our notes
+            and transcripts,{" "}
             <span className="highlight">finding three major patterns.</span>
             <div className="row projectImage">
               <img
@@ -114,15 +114,15 @@ const BoundarEase = () => {
             happening, etc.
             <div className="subsectionSpacer" />
             <h4>tension between individual and collective</h4>
-            Some interviewees mainly wanted to know how boundary changes would
-            impact their own families, while others wanted to look at the bigger
-            picture. Interviewees also brought up not trusting other parents, or
-            on the other end, wanting to hear from other parents to get more
-            ideas and viewpoints.
+            Some interviewees primarily wanted to know how boundary changes
+            would impact their own families, while others wanted to look at the
+            bigger picture. Interviewees also brought up not trusting other
+            parents, or on the other end, wanting to hear other parents' ideas
+            and viewpoints.
             <div className="subsectionSpacer" />
             <h4>distrust between community and the district</h4>
-            Parents also felt that feedback was being ignored by the school
-            district, which led some to not fill out the surveys at all.
+            Parents also felt that the school district was ignoring feedback,
+            which led some to not fill out the surveys at all.
             <div className="paragraphSpacer" />
             They also did not understand the rationale behind the decisions that
             were being made. A couple of parents suggested framing the boundary
@@ -146,7 +146,7 @@ const BoundarEase = () => {
           <div className={sectionContentColumnSpacing + " d-grid"}>
             We combined our findings from the formative study and our own
             hypotheses to define the following three questions.
-            {/* <div
+            <div
               className="mb-4 m-auto d-flex"
               style={{ alignItems: "baseline" }}
             >
@@ -154,22 +154,6 @@ const BoundarEase = () => {
               Can helping families see how they are embedded in a connected
               system increase their awareness of how certain policies,
               particularly their own preferences, might impact other families?
-            </div> */}
-            <div className="row">
-              <div className="col-12">
-                <div className="stat-item">
-                  <div className="stat-badge">
-                    <span className="stat-number">1</span>
-                  </div>
-
-                  <p className="stat-text mb-0">
-                    Can helping families see how they are embedded in a
-                    connected system increase their awareness of how certain
-                    policies, particularly their own preferences, might impact
-                    other families?
-                  </p>
-                </div>
-              </div>
             </div>
             <div
               className="mb-4 m-auto d-flex"
@@ -194,11 +178,6 @@ const BoundarEase = () => {
               shared vocabulary or set of community values, can it increase
               community trust in the district’s decision-making process?
             </div>
-            {/* <div className="text-center col-9 m-auto"> */}
-            {/* If the redistricting goals of the district are presented through a
-            shared vocabulary or set of community values, can it increase
-            community trust in the district’s decision-making process? */}
-            {/* </div> */}
           </div>
           <div className="sectionSpacer" />
           <hr />
@@ -223,16 +202,16 @@ const BoundarEase = () => {
                 href="https://www.nngroup.com/articles/how-might-we-questions/"
                 target="_blank"
               > */}
-              How might we" questions
+              "How might we" questions
               {/* </a> */}, expanding with{" "}
               {/* <a
                 href="https://boardofinnovation.com/staff_picks/50-what-if-questions-to-reimagine-the-future/"
                 target="_blank"
               > */}
               "What if" questions
-              {/* </a>{" "} */} if helpful. We wrote our ideas and potential
-              features individually on Post-it notes and clustered similar ideas
-              together.
+              {/* </a>{" "} */} when helpful. We wrote our ideas and potential
+              features individually on Post-it notes before clustering similar
+              ideas together.
               <div className="paragraphSpacer" />
               We then brainstormed potential platforms, using our similar ideas
               as a starting point. Some possibilities included a chat app to
@@ -241,17 +220,17 @@ const BoundarEase = () => {
               engaging experience that could also encourage empathy.
               <div className="paragraphSpacer" />
               Initially, we settled on a website that would revolve around a
-              timeline, with elements that highlighted feedback events, as well
-              as documented the process. We saw positive reactions when we
-              talked with the school and SMEs, but felt that the idea was not
-              pushing what was possible or already known.
+              timeline, highlighted feedback events, and documented the process.
+              We saw positive reactions when we talked with the school and SMEs,
+              but felt that the idea was not pushing what was possible or
+              already known.
               <div className="paragraphSpacer" />
               So, we{" "}
               <span className="highlight">
                 pivoted to focus more on the survey experience
               </span>{" "}
               and how users could interact with data and receive information,
-              which would receive much more enthusiastic feedback.
+              which received more enthusiastic feedback.
               <div className="row projectImage">
                 <img
                   src={images["clusters"]}
@@ -290,8 +269,8 @@ const BoundarEase = () => {
                   <h4>establishment of feedback loops</h4>
                   <p>
                     To address the feeling of not being heard because the
-                    district historically never follow up on / seemed to address
-                    feedback
+                    district historically never followed up on nor seemed to
+                    address feedback
                   </p>
                 </li>
                 <li>
@@ -337,9 +316,10 @@ const BoundarEase = () => {
               </div>
               <div className="subsectionSpacer" />
               <h4>high-fidelity prototype</h4>We{" "}
-              <span className="highlight">grounded the platform</span> in the
-              four priorities, or "four pillars," that the school board
-              established.
+              <span className="highlight">
+                grounded the platform in the four priorities
+              </span>
+              , or "four pillars," that the school board established.
               <div className="paragraphSpacer" />
               A user is asked to rank the four pillars from most important to
               least important and provide their address. They are then presented
@@ -383,11 +363,11 @@ const BoundarEase = () => {
               Then the user is shown a different perspective from their own,
               determined by their ranking from the first page. It would be a
               testimonial from a student or faculty member, feedback from
-              another parents. etc. They are presented the same feedback UI as
+              another parents, etc. They are presented the same feedback UI as
               before and asked if they want to change anything.
               <div className="paragraphSpacer" />
               Once they submit, they are shown a simple thank you screen and
-              possibly given next steps or ways of contacting the school.{" "}
+              given next steps or ways of contacting the school.
             </div>
           </div>
           <div className="sectionSpacer" />
@@ -409,10 +389,9 @@ const BoundarEase = () => {
               We assessed BoundarEase by conducting{" "}
               <span className="highlight">12 semi-structured</span> interviews,
               asking participants to think aloud as they interacted with a
-              desktop version of the platform and answered periodic questions. A
-              teammate and I then synthesized the data with thematic coding,
-              segmenting the interviews into units and assigning each unit a
-              code for analysis.
+              desktop version of the platform and answered periodic questions.
+              We then synthesized the data via thematic coding, segmenting the
+              interviews into units and assigning each unit a code for analysis.
               <div className="row projectImage">
                 <img
                   src={images["user_study"]}

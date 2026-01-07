@@ -109,6 +109,7 @@ const Home = () => {
               </Link>
             ))}
           </div>
+          {/* UNDER CONSTRUCTION */}
           {/* <div
             style={{
               display: "flex",
