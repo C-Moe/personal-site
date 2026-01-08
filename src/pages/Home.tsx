@@ -79,7 +79,7 @@ const Home = () => {
       <Nav />
 
       <div className="mainContent">
-        <div className="container homepageHeaderContainer mb-3">
+        <div className="container homepageHeaderContainer mb-4">
           <h3
             style={{
               textTransform: "none",

@@ -65,6 +65,7 @@ h6 {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /******** FOR PROJECTS AND PROJECT CARDS ON HOMEPAGE ********/
@@ -439,18 +440,19 @@ ol li {
 
 /* styling for competitive analysis table in hi neighbor */
 #hi_neighbor_competitive_analysis li {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+}
+
+#hi_neighbor_competitive_analysis ul {
+  margin-left: 20px;
 }
 
 #hi_neighbor_competitive_analysis .bold-italic {
-  margin-bottom: 0.25rem;
+  margin-bottom: 10px;
 }
 
-#hi_neighbor_competitive_analysis #first-column,
-#hi_neighbor_competitive_analysis #second-column {
-  border-right: 1.5px solid var(--grey);
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+.hi_neighbor_ca_column {
+  padding: 10px;
 }
 
 .hi_neighbor_prototypeimg {
@@ -528,6 +530,10 @@ ol li {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .homepageHeaderContainer {
+    justify-content: start;
+  }
+
   h1 {
     font-size: 3em;
   }

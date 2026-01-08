@@ -31,9 +31,6 @@ const BoundarEase = () => {
           subtitle1={
             "A web platform for community members to explore potential school attendance boundaries based on their preferences and offer feedback."
           }
-          subtitle2={
-            "It aims to facilitate community engagement, as well as foster more equitable student assignment policies."
-          }
         />
         <ProjectInfo info={info} />
 
