@@ -10,6 +10,7 @@ import initial_mobile_sitemap from "./assets/project_images/shopgreen/initial_mo
 import desktop_sitemap from "./assets/project_images/shopgreen/desktop_sitemap.png";
 import mobile_sitemap from "./assets/project_images/shopgreen/mobile_sitemap.png";
 import main_wireframes from "./assets/project_images/shopgreen/main_wireframes.png";
+import main_wireframes_wider from "./assets/project_images/shopgreen/main_wireframes_wider.svg";
 import additional_wireframes from "./assets/project_images/shopgreen/additional_wireframes.png";
 import mobile_wireframes from "./assets/project_images/shopgreen/mobile_wireframes.png";
 import ui_kit from "./assets/project_images/shopgreen/ui_kit.png";
@@ -37,6 +38,7 @@ export const images: { [key: string]: any } = {
   desktop_sitemap: desktop_sitemap,
   mobile_sitemap: mobile_sitemap,
   main_wireframes: main_wireframes,
+  main_wireframes_wider: main_wireframes_wider,
   additional_wireframes: additional_wireframes,
   mobile_wireframes: mobile_wireframes,
   ui_kit: ui_kit,

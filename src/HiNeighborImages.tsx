@@ -1,5 +1,6 @@
 import top_image from "./assets/project_images/hi_neighbor/top_image.jpg";
 import overview_mockup from "./assets/project_images/hi_neighbor/overview_mockup.png";
+import overview_mockup_fewer from "./assets/project_images/hi_neighbor/overview_mockup_fewer.png";
 import competitiveanalysis_images from "./assets/project_images/hi_neighbor/competitiveanalysis_images.jpg";
 import visualinspiration from "./assets/project_images/hi_neighbor/visualinspiration.jpg";
 import demographics from "./assets/project_images/hi_neighbor/demographics.jpg";
@@ -30,6 +31,7 @@ import ui_kit from "./assets/project_images/hi_neighbor/ui_kit.png";
 export const images: { [key: string]: any } = {
   top_image: top_image,
   overview_mockup: overview_mockup,
+  overview_mockup_fewer: overview_mockup_fewer,
   competitiveanalysis_images: competitiveanalysis_images,
   visualinspiration: visualinspiration,
   demographics: demographics,

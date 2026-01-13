@@ -50,7 +50,7 @@ const projects: {
   //     desc: "A campaign designed to address low young-voter turnout in the United States, particularly among college students voting out-of-state.",
   //   },
   {
-    id: "country",
+    id: "country-at-a-glance",
     imgpath: "country",
     title: "Country at a Glance — Canada",
     projtype: "information design",

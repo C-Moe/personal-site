@@ -70,6 +70,12 @@ const HiNeighbor = () => {
             , which can lead to unproductive or transactional interactions.
           </div>
         </div>
+        <div className="paragraphSpacer" />
+        <img
+          src={images["overview_mockup_fewer"]}
+          alt="various mockup of hi neighbor"
+          className="col-12"
+        />
 
         {/* overview */}
         {/* <div className="row">
@@ -680,20 +686,22 @@ const HiNeighbor = () => {
               type="project info"
             />
 
-            <div className="row col-12">
-              <div className="embed-responsive col-6">
-                <iframe
-                  width="500"
-                  height="650"
-                  className="embed-responsive-item"
-                  src="https://www.youtube.com/embed/9u1TqpiGUzo?si=luPY4QpqzyJgWzhF&amp;controls=1"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
+            <div className="row g-4">
+              <div className="col-12 col-md-6">
+                <div className="embed-responsive responsive-iframe-wrapper ">
+                  <iframe
+                    width="500"
+                    height="650"
+                    className="embed-responsive-item responsive-iframe"
+                    src="https://www.youtube.com/embed/9u1TqpiGUzo?si=luPY4QpqzyJgWzhF&amp;controls=1"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
-              <div className="col-4">
+              <div className="col-12 col-md-4 offset-md-1">
                 <img
                   src={images["decision_tree"]}
                   alt="decision tree for onboarding"

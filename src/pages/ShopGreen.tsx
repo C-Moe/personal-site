@@ -1,8 +1,13 @@
 import { images } from "../ShopGreenImages";
-import Footer from "./Footer";
-import HeaderAndText from "./HeaderAndText";
-import ProjectInfo from "./ProjectInfo";
+import Footer from "../components/Footer";
+import HeaderAndText from "../components/HeaderAndText";
+import ProjectInfo from "../components/ProjectInfo";
 import quotemark from "../assets/quotemark.svg";
+import ProjectSubtitles from "../components/ProjectSubtitles";
+import {
+  sectionHeaderColumnSpacing,
+  sectionContentColumnSpacing,
+} from "../constants";
 
 const info: IProjectInfo = {
   year: "2021",
@@ -22,23 +27,46 @@ const ShopGreen = () => {
       />
       <div className="projectPageContent">
         <h1 className="projectTitle">ShopGreen</h1>
+        <ProjectSubtitles
+          subtitle1={
+            "A curated database for consumers who want to shop sustainably."
+          }
+        />
         <ProjectInfo info={info} />
 
         <div className="sectionSpacer" />
 
         {/* overview */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
-            <HeaderAndText type="section header" title="overview" text={""} />
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
+            <HeaderAndText type="section header" title="process" text={""} />
+
+            <div className="fst-italic">
+              define {"->"} research {"->"} 1st iteration {"->"} usability
+              testing {"->"} 2nd iteration
+            </div>
           </div>
-          <div className="col-6">
-            A <span className="highlight">curated database</span> for consumers
-            who want to shop sustainably.
+          <div className={sectionContentColumnSpacing}>
+            <HeaderAndText type="section header" title="background" text={""} />
+            A
+            <a
+              href="https://www.pewresearch.org/short-reads/2023/08/09/what-the-data-says-about-americans-views-of-climate-change/"
+              target="_blank"
+            >
+              {" "}
+              2023 survey conducted in the U.S.
+            </a>{" "}
+            showed that 43% of Americans don't believe they are personally doing
+            enough to reduce climate change repercussions, suggesting a{" "}
+            <span className="highlight">
+              gap between user desires and behaviors
+            </span>
+            .
             <div className="paragraphSpacer" />
-            ShopGreen helps users understand what different certifications and
-            ecolabels entail, as well as helps them find and compare sustainable
-            businesses. It also aims to reduce barriers to certification for
-            smaller businesses.
+            ShopGreen helps users find and compare sustainable businesses, as
+            well as understand what different certifications and ecolabels
+            entail. It also aims to reduce barriers to certification for smaller
+            businesses.
             <div className="paragraphSpacer" />
             <img
               src={images["overview"]}
@@ -51,7 +79,7 @@ const ShopGreen = () => {
         <div className="sectionSpacer" />
 
         {/* process */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-4 sectionHeaderColumn">
             <HeaderAndText type="section header" title="process" text={""} />
           </div>
@@ -61,10 +89,10 @@ const ShopGreen = () => {
           </div>
         </div>
 
-        <div className="sectionSpacer" />
+        <div className="sectionSpacer" /> */}
 
         {/* background */}
-        <div className="row">
+        {/* <div className="row">
           <div className="col-4 sectionHeaderColumn">
             <HeaderAndText type="section header" title="background" text={""} />
           </div>
@@ -96,43 +124,43 @@ const ShopGreen = () => {
             </span>
             .
           </div>
-        </div>
+        </div> */}
 
+        <div className="sectionSpacer" />
+        <hr />
         <div className="sectionSpacer" />
 
         {/* defining the problem */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
             <HeaderAndText
               type="section header"
               title="defining the problem"
               text={"Interviewing to explore and define"}
             />
           </div>
-          <div className="col-6">
-            <hr />
-            To tackle that discrepancy, I wanted to determine{" "}
+          <div className={sectionContentColumnSpacing}>
+            I wanted to determine{" "}
             <span className="highlight">
               {" "}
               what external factors might affect consumers' day-to-day choices
             </span>{" "}
-            when purchasing goods. Thus, I posed the question,{" "}
-            <div className="fst-italic">
+            when purchasing goods, posing the question,{" "}
+            <span className="fst-italic">
               {" "}
               "How can sustainable living be made more accessible for the
               average consumer?"
-            </div>
+            </span>
             <div className="paragraphSpacer" />
-            I conducted five initial interviews to gain an understanding of
-            people's current practices, how they acquire knowledge about
-            sustainable practices, what obstacles they encounter, and desires
-            that they have.
+            I conducted five interviews to gain an understanding of people's
+            current practices, how they acquire knowledge about sustainability
+            practices, what obstacles they encounter, and what desires they
+            have.
             <div className="paragraphSpacer" />
-            Interviewees were young adults from multiple states in the U.S. and
-            had varying budgets. I felt they would be fairly representative of a
-            target audience, as they wanted to reduce their carbon footprint and
-            had some ability to change their behavior, yet ranged in the
-            intensity of that desire and monetary capacity.
+            Interviewees were young adults from multiple states in the U.S. with
+            varying budgets. They all wanted to reduce their carbon footprint
+            and had some ability to change their behavior, but ranged in the
+            intensity of that desire and their monetary capacity.
             <div className="row mt-4 mb-5">
               <img
                 src={images["interview_notes"]}
@@ -151,11 +179,12 @@ const ShopGreen = () => {
                 called out large corporations' practices or lack of transparency
               </div>
             </div>
-            Based on their responses, I saw{" "}
-            <span className="highlight">a gap</span> between people's desire to
-            make sustainable purchases and their busy lifestyles , which created
-            <span className="highlight">friction for learning</span> about their
-            options as a consumer.
+            Based on their responses, I saw a gap between people's desire to
+            make sustainable purchases and their busy lifestyles, which created{" "}
+            <span className="highlight">
+              friction for learning about their options as a consumer
+            </span>
+            .
             <div className="row mt-5 mb-5 text-center filter-coolgreen">
               <div className="col-1">
                 <img src={quotemark} alt='"' />
@@ -174,30 +203,33 @@ const ShopGreen = () => {
                 secretive but the largest generator of big carbon footprints...
               </div>
             </div>
-            There appeared to be a lack of knowledge of alternative options
-            (e.g. smaller businesses with lesser environmental impact) and what
-            certifications or terminology meant (one interviewee mentioned
-            having to look up what plant-based laundry detergent was). Some
-            participants also expressed concern over greenwashing, such as
+            There appeared to be a lack of knowledge about alternative options
+            (e.g. smaller businesses with lesser environmental impact), as well
+            as what certifications or terminology meant (one interviewee
+            mentioned having to look up what plant-based laundry detergent was).
+            Some participants also expressed concern over greenwashing, such as
             whether the label on a product was legitimate or had a meaningful
             standard to justify the price.
             <div className="paragraphSpacer" />
-            Thus, I wanted to create a "
-            <span className="highlight">curated database</span>" that would
-            consolidate information in a way that was{" "}
-            <span className="highlight">quick and digestible</span>, so that the
-            average consumer could learn just enough to make more informed
-            decisions without sorting through too much text or technicality. I
-            also wanted to address potential obstacles for businesses that
-            wanted to become more sustainable or certified.
+            Thus, I wanted to create a{" "}
+            <span className="highlight">curated database</span> that would
+            consolidate{" "}
+            <span className="highlight">quick and digestible information</span>,
+            empowering the average consumer to learn just enough to make more
+            informed decisions without sorting through a lot of text or
+            technicality. I also wanted to address potential obstacles for
+            businesses that wanted to become more sustainable, or even
+            certified.
           </div>
         </div>
 
         <div className="sectionSpacer" />
+        <hr />
+        <div className="sectionSpacer" />
 
         {/* additional research */}
         <div className="row">
-          <div className="col-4 sectionHeaderColumn">
+          <div className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}>
             <HeaderAndText
               type="section header"
               title="additional research"
@@ -206,9 +238,9 @@ const ShopGreen = () => {
               }
             />
           </div>
-          <div className="col-6">
-            <hr />I researched existing websites with similar goals to
-            understand what I should consider for my own platform.
+          <div className={sectionContentColumnSpacing}>
+            I researched existing websites with similar goals to understand what
+            I should consider for my own platform.
             <div className="paragraphSpacer" />
             <div className="row mt-4 mb-3">
               <img
@@ -253,24 +285,27 @@ const ShopGreen = () => {
           </div>
 
           <div className="sectionSpacer" />
+          <hr />
+          <div className="sectionSpacer" />
 
           {/* first iteration */}
           <div className="row">
-            <div className="col-4 sectionHeaderColumn">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
               <HeaderAndText
                 type="section header"
                 title="first iteration"
                 text={"Sitemap and wireframes / lo-fi mockups"}
               />
             </div>
-            <div className="col-6">
-              <hr />
+            <div className={sectionContentColumnSpacing}>
               After interviewing folks and researching other sites, I began
               fleshing out my site's features and structure. While
               brainstorming, I decided I wanted to leverage the camera
-              functionality on smartphones, which lead to an additional feature
-              on the mobile breakpoint that allows for users to scan an ecolabel
-              and bring up an overview.
+              functionality on smartphones, which led to an additional feature
+              on the mobile breakpoint that allows users to scan an ecolabel and
+              bring up an overview of that ecolabel.
               <div className="subsectionSpacer" />
               <h4>storyboards</h4>
               <div className="row mt-2 mb-5">
@@ -292,7 +327,7 @@ const ShopGreen = () => {
                   <img
                     src={images["initial_desktop_sitemap"]}
                     alt="sitemap for desktop version"
-                    className="col-12"
+                    className="col-12 mb-3"
                   />
                   <div
                     className="fst-italic"
@@ -305,57 +340,62 @@ const ShopGreen = () => {
                   <img
                     src={images["initial_mobile_sitemap"]}
                     alt="sitemap for mobile version"
-                    className="col-12"
+                    className="col-12 mb-3"
                   />
                   <div className="fst-italic">mobile</div>
                 </div>
               </div>
               <div className="subsectionSpacer" />
-              <h4>wireframes</h4>
-              <div className="row mt-3 mb-5">
-                <img src={images["interviews1_framework"]} />
-                <div className="row mb-3">
-                  <img
-                    src={images["main_wireframes"]}
-                    alt="ShopGreen landing page wireframes"
-                    className="col-12 mb-4"
-                  />
-                </div>
-                <div className="row mb-3">
-                  <img
-                    src={images["additional_wireframes"]}
-                    alt="additional ShopGreen wireframes"
-                    className="col-12 mt-4 mb-2"
-                  />
-                  <div className="fst-italic mb-4">additional wireframes</div>
-                </div>
-                <div className="row mb-3">
-                  <img
-                    src={images["mobile_wireframes"]}
-                    alt="ShopGreen mobile wireframes"
-                    className="col-6 mt-4 mb-2"
-                  />
-                  <div className="fst-italic mb-4">mobile wireframes</div>
-                </div>
+            </div>
+          </div>
+          <div className="row">
+            <h4>wireframes</h4>
+            <div className="row mt-3 mb-5">
+              <img src={images["interviews1_framework"]} />
+              <div className="row mb-3">
+                <img
+                  src={images["main_wireframes_wider"]}
+                  alt="ShopGreen landing page wireframes"
+                  className="col-12 mb-4"
+                />
+              </div>
+              <div className="row mb-3">
+                <img
+                  src={images["additional_wireframes"]}
+                  alt="additional ShopGreen wireframes"
+                  className="col-12 mt-4 mb-2"
+                />
+                <div className="fst-italic mb-4">additional wireframes</div>
+              </div>
+              <div className="row mb-3">
+                <img
+                  src={images["mobile_wireframes"]}
+                  alt="ShopGreen mobile wireframes"
+                  className="col-6 mt-4 mb-2"
+                />
+                <div className="fst-italic mb-4">mobile wireframes</div>
               </div>
             </div>
           </div>
 
           <div className="sectionSpacer" />
+          <hr />
+          <div className="sectionSpacer" />
 
           {/* usability testing */}
           <div className="row">
-            <div className="col-4 sectionHeaderColumn">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
               <HeaderAndText
                 type="section header"
                 title="usability testing"
                 text={"Identifying design successes and points for improvement"}
               />
             </div>
-            <div className="col-6">
-              <hr />
+            <div className={sectionContentColumnSpacing}>
               <h4>methodology</h4>I tested the lo-fi mockups by asking three
-              potential users to complete a set of tasks on both versions,
+              target users to complete a set of tasks on both versions,
               including
               <ol className="mt-3 mb-3">
                 <li>
@@ -396,16 +436,17 @@ const ShopGreen = () => {
               <span className="highlight">
                 address ambuity and confusion when navigating
               </span>
-              . One paricipant expressed a desire to be able to shop directly on
-              the site; because I wanted to uplift the individual businesses
-              over being a third-party retailer, I decided on a middle ground of
-              suggesting products on ShopGreen and linking directly to that
-              product on the original seller's site. Other ideas that stemmed
-              from feedback included the ability to compare businesses within
-              the database, creating a more personalized experience with
-              consumer accounts, and having a standardized way to quantify how
-              sustainable a business is within the site, based on industry and
-              size.
+              . One participant expressed a desire to be able to shop directly
+              on a business's site; because I wanted to uplift the individual
+              businesses over being a third-party retailer, I decided on a
+              middle ground of suggesting products on ShopGreen and linking
+              directly to that product on the original seller's site.
+              <div className="paragraphSpacer" />
+              Other ideas that stemmed from feedback included the ability to
+              compare businesses within the database, creating a more
+              personalized experience with consumer accounts, and having a
+              standardized way to quantify how sustainable a business is within
+              the site, based on industry and size.
               <div className="paragraphSpacer" />
               As for the different layouts I tested, I found that users{" "}
               <span className="highlight">
@@ -417,19 +458,23 @@ const ShopGreen = () => {
               than dropdowns.
             </div>
           </div>
+
+          <div className="sectionSpacer" />
+          <hr />
           <div className="sectionSpacer" />
 
           {/* second iteration */}
           <div className="row">
-            <div className="col-4 sectionHeaderColumn">
+            <div
+              className={sectionHeaderColumnSpacing + " sectionHeaderColumn"}
+            >
               <HeaderAndText
                 type="section header"
                 title="second iteration"
                 text={"Editing desktop and mobile breakpoints"}
               />
             </div>
-            <div className="col-6">
-              <hr />
+            <div className={sectionContentColumnSpacing}>
               <h4>sitemaps</h4>
               <div className="row mt-2 mb-5">
                 <div className="col-6" id="shopgreen_desktop_sitemap">
