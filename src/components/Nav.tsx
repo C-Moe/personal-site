@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Nav = () => {
   return (
     <div className="row" id="nav">
-      <img src={logo} />
+      <Link to={"/"}>
+        <img src={logo} />
+      </Link>
     </div>
   );
 };

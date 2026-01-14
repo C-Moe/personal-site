@@ -1,7 +1,8 @@
-import { images } from "../BoundareaseImages";
+import { images } from "../img_files/BoundareaseImages";
 import Footer from "../components/Footer";
 import HeaderAndText from "../components/HeaderAndText";
 import HighlightedNumber from "../components/HighlightedNumber";
+import Nav from "../components/Nav";
 import ProjectInfo from "../components/ProjectInfo";
 import ProjectSubtitles from "../components/ProjectSubtitles";
 import {
@@ -20,6 +21,7 @@ const info: IProjectInfo = {
 const BoundarEase = () => {
   return (
     <div className="projectPage">
+      <Nav />
       <img
         className="container projectTopImage"
         src={images["boundarease"]}

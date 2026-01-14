@@ -1,4 +1,4 @@
-import { images } from "../HiNeighborImages";
+import { images } from "../img_files/HiNeighborImages";
 import Footer from "../components/Footer";
 import HeaderAndText from "../components/HeaderAndText";
 import HighlightedNumber from "../components/HighlightedNumber";
@@ -9,6 +9,7 @@ import {
   sectionHeaderColumnSpacing,
   sectionContentColumnSpacing,
 } from "../constants";
+import Nav from "../components/Nav";
 
 const info: IProjectInfo = {
   year: "2023",
@@ -21,6 +22,7 @@ const info: IProjectInfo = {
 const HiNeighbor = () => {
   return (
     <div className="projectPage">
+      <Nav />
       <img
         className="container projectTopImage"
         src={images["top_image"]}

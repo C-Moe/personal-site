@@ -5,6 +5,8 @@ import HiNeighbor from "./pages/HiNeighbor";
 import ShopGreen from "./pages/ShopGreen";
 import CountryAtAGlance from "./pages/CountryAtAGlance";
 import BackToTop from "./components/BackToTop";
+import TypeAtSea from "./pages/TypeAtSea";
+import Typesetting from "./pages/Typesetting";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/hi-neighbor" element={<HiNeighbor />} />
         <Route path="/shopgreen" element={<ShopGreen />} />
         <Route path="/country-at-a-glance" element={<CountryAtAGlance />} />
+        <Route path="/typesetting" element={<Typesetting />} />
+        <Route path="/type-at-sea" element={<TypeAtSea />} />
       </Routes>
       <BackToTop />
     </>

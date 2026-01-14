@@ -1,4 +1,4 @@
-import { images } from "../ShopGreenImages";
+import { images } from "../img_files/ShopGreenImages";
 import Footer from "../components/Footer";
 import HeaderAndText from "../components/HeaderAndText";
 import ProjectInfo from "../components/ProjectInfo";
@@ -8,6 +8,7 @@ import {
   sectionHeaderColumnSpacing,
   sectionContentColumnSpacing,
 } from "../constants";
+import Nav from "../components/Nav";
 
 const info: IProjectInfo = {
   year: "2021",
@@ -20,6 +21,7 @@ const info: IProjectInfo = {
 const ShopGreen = () => {
   return (
     <div className="projectPage">
+      <Nav />
       <img
         className="container projectTopImage"
         src={images["top_image"]}

@@ -1,4 +1,4 @@
-import { images } from "../ProjectPreviewImages";
+import { images } from "../img_files/ProjectPreviewImages";
 
 const ProjectCard = (props: {
   imgpath: string;

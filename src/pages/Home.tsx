@@ -13,6 +13,7 @@ import Nav from "../components/Nav";
 // import ShopGreen from "./components/ShopGreen";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
+import CustomCursor from "../components/CustomCursor";
 
 const projects: {
   id: string;
@@ -74,7 +75,8 @@ const projects: {
 
 const Home = () => {
   return (
-    <div className="appContainer">
+    <div className="appContainer home-page">
+      <CustomCursor />
       {/* <Projects /> */}
       <Nav />
 
