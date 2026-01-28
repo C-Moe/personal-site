@@ -8,7 +8,7 @@ import ProjectSubtitles from "../components/ProjectSubtitles";
 import {
   sectionContentColumnSpacing,
   sectionHeaderColumnSpacing,
-} from "../constants";
+} from "../utils";
 
 const info: IProjectInfo = {
   year: "2023",

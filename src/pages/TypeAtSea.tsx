@@ -2,8 +2,10 @@ import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import ProjectSubtitles from "../components/ProjectSubtitles";
 import { images } from "../img_files/TypeAtSeaImages";
+import { useBodyClassName } from "../utils";
 
 const TypeAtSea = () => {
+  useBodyClassName("body-dark");
   return (
     <div className="projectPage">
       <Nav />

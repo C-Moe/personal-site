@@ -21,6 +21,24 @@ body {
   --yellow-green: #e7e08b;
 }
 
+body.body-dark {
+  background-color: var(--off-black);
+  color: var(--off-white);
+}
+
+.body-dark #nav-img-logo {
+  filter: invert(1);
+}
+
+.body-dark h1,
+.body-dark .projectSubtitle1 {
+  color: var(--off-white);
+}
+
+.body-dark .projectSubtitle1 {
+  opacity: 0.7;
+}
+
 .appContainer {
   display: flex;
   flex-direction: column;
@@ -36,7 +54,7 @@ hr {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 2px dotted var(--grey);
+  border-bottom: 1px solid var(--grey);
   margin-bottom: 30px;
 }
 
@@ -326,22 +344,12 @@ b {
   font-weight: 550;
 }
 
-/* horizontal line between sections */
-hr {
-  border-top-color: var(--off-black);
-  background-color: var(--off-white);
-  height: 0.5rem;
-  border-top-width: 0.08rem;
-  opacity: 100%;
-}
-
 .paragraphSpacer {
   height: 20px;
 }
 
 .sectionSpacer {
-  /* height: 120px; */
-  height: 1rem;
+  height: 4rem;
 }
 
 .subsectionSpacer {
@@ -446,21 +454,26 @@ ol li {
 }
 
 #footer {
-  background-color: var(--off-black);
+  background-color: var(--grey);
   height: auto;
   margin-left: calc(50% - 50vw);
   min-width: 100vw;
   /* width: 100vw; */
   align-content: center;
-  padding: 20px 0;
+  padding: 20px 20px;
+  padding-left: 2rem;
 }
 
 #footer_text {
   color: var(--off-white);
   font-family: "Noto Serif Display", Palatino, serif;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   /* font-size: 1.5rem; */
   font-size: max(16px, calc(5px + 1vw));
+}
+
+#footer_icons {
+  align-content: center;
 }
 
 .responsive-iframe-wrapper {
@@ -489,7 +502,7 @@ ol li {
 
 #footer_icons img {
   /* height: 1.5rem; */
-  height: max(20px, calc(5px + 1vw));
+  height: max(18px, calc(5px + 1vw));
   padding-right: 2.5rem;
   float: right;
   padding-right: 20px;
@@ -604,11 +617,6 @@ ol li {
   .projectSubtitle1 {
     font-size: 1.3em;
     color: var(--grey);
-  }
-
-  /* adds padding to match text when at small breakpoint */
-  #footer_icons {
-    padding-left: 20px;
   }
 
   #footer_icons img {

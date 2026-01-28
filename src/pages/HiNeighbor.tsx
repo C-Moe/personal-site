@@ -8,7 +8,7 @@ import ProjectSubtitles from "../components/ProjectSubtitles";
 import {
   sectionHeaderColumnSpacing,
   sectionContentColumnSpacing,
-} from "../constants";
+} from "../utils";
 import Nav from "../components/Nav";
 
 const info: IProjectInfo = {

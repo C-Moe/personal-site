@@ -81,7 +81,7 @@ const Home = () => {
       <Nav />
 
       <div className="mainContent">
-        <div className="container homepageHeaderContainer mb-4">
+        <div className="container homepageHeaderContainer mt-3 mb-5">
           <h3
             style={{
               textTransform: "none",
