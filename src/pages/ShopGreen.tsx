@@ -59,7 +59,7 @@ const ShopGreen = () => {
               2023 survey conducted in the U.S.
             </a>{" "}
             showed that 43% of Americans don't believe they are personally doing
-            enough to reduce climate change repercussions, suggesting a{" "}
+            enough to address climate change, suggesting a{" "}
             <span className="highlight">
               gap between user desires and behaviors
             </span>
@@ -148,7 +148,7 @@ const ShopGreen = () => {
               what external factors might affect consumers' day-to-day choices
             </span>{" "}
             when purchasing goods, posing the question,{" "}
-            <span className="fst-italic">
+            <span className="fst-italic quote">
               {" "}
               "How can sustainable living be made more accessible for the
               average consumer?"
@@ -181,26 +181,27 @@ const ShopGreen = () => {
                 called out large corporations' practices or lack of transparency
               </div>
             </div>
-            Based on their responses, I saw a gap between people's desire to
-            make sustainable purchases and their busy lifestyles, which created{" "}
+            Based on their responses, I saw a discrepancy particularly between
+            people's desire to make sustainable purchases and their busy
+            lifestyles, which created{" "}
             <span className="highlight">
               friction for learning about their options as a consumer
             </span>
             .
-            <div className="row mt-5 mb-5 text-center filter-coolgreen">
+            <div className="row mt-5 mb-4 filter-coolgreen quote">
               <div className="col-1">
                 <img src={quotemark} alt='"' />
               </div>
-              <div className="col-6 fst-italic">
+              <div className="col-10 fst-italic">
                 I’ve only toyed with living sustainably because I’m too lazy and
                 uninformed...the info is out there, you just have to find it.
               </div>
             </div>
-            <div className="row mt-4 mb-4 text-center justify-content-end filter-coolgreen">
+            <div className="row mt-4 mb-5 filter-coolgreen quote">
               <div className="col-1">
                 <img src={quotemark} alt='"' />
               </div>
-              <div className="col-7 fst-italic">
+              <div className="col-10 fst-italic">
                 Large corporations and their supply chain networks are super
                 secretive but the largest generator of big carbon footprints...
               </div>
@@ -273,10 +274,10 @@ const ShopGreen = () => {
             Another thing I wanted to highlight were certifications and
             ecolabels, as they are the main ways for businesses to demonstrate
             their sustainable practices. This would include an overview of the
-            certificate (e.g. is for businesses that aim to alleviate poverty
-            and protect marine environments) and the standards for receiving the
-            certificate (e.g. must meet requirements and attain 30 points on an
-            application).
+            certificate (e.g. "is for businesses that aim to alleviate poverty
+            and protect marine environments") and the standards for receiving
+            the certificate (e.g. "must meet requirements and attain 30 points
+            on an application").
             <div className="subsectionSpacer" />
             <h4>moodboard</h4>
             <img
@@ -404,7 +405,9 @@ const ShopGreen = () => {
                   finding a skincare business and identifying various
                   characteristics of it,{" "}
                 </li>
-                <li>learning about a certification given a name, and </li>
+                <li>
+                  learning about a certification after being given its name, and{" "}
+                </li>
                 <li>identifying an ecolabel.</li>
               </ol>
               Participants quantified how easy the task felt on a scale from

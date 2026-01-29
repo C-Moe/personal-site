@@ -132,7 +132,7 @@ const HiNeighbor = () => {
             ; this was something I wanted to address in my concept.
             <div className="paragraphSpacer" />
             Researching neighborhood and mutual aid Facebook groups gave me a
-            sense of neighbor and virtual community dynamics.
+            sense of virtual community dynamics.
             <div className="subsectionSpacer" />
             <h4>competitive analysis</h4>
             I researched the following 3 types of platforms, which ultimately
@@ -346,15 +346,40 @@ const HiNeighbor = () => {
               </div>
               <div className="subsectionSpacer" />
               Of the 6 interviewees,
-              <div className="row">
-                <div className="col-5 d-grid text-start p-2">
-                  {/* <div className="KeyNumber">5</div> */}
+              <div className="stat d-flex align-items-center mt-3 mb-4">
+                <div className="KeyNumber">5</div>
+                <div className="keyInfoCaption mx-3">
+                  said they would read the bulletin’s content
+                </div>
+              </div>
+              <div className="stat d-flex align-items-center mb-4">
+                <div className="KeyNumber">4</div>
+                <div className="keyInfoCaption mx-3">
+                  mentioned liking the board's aesthetic/colors
+                </div>
+              </div>
+              <div className="stat d-flex align-items-center mb-4">
+                <div className="KeyNumber">5</div>
+                <div className="keyInfoCaption mx-3">
+                  wanted to feel close enough to their neighbors to meet up
+                  monthly
+                </div>
+              </div>
+              <div className="stat d-flex align-items-center">
+                <div className="KeyNumber">5</div>
+                <div className="keyInfoCaption mx-3">
+                  stated they were much more likely to use the platform if they
+                  saw others using it
+                </div>
+              </div>
+              {/* <div className="row">
+                <div className="keyInfoCaption d-flex align-items-center">
                   <HighlightedNumber num="5" />
                   said they would read the bulletin’s content
                 </div>
-                <div className="col-1" />
-                <div className="col-5 d-grid text-start p-2">
-                  {/* <div className="KeyNumber">4</div> */}
+              </div>
+              <div className="row">
+                <div className="keyInfoCaption d-flex align-items-center">
                   <HighlightedNumber num="4" />
                   mentioned liking the board's aesthetic/colors
                 </div>
@@ -362,19 +387,17 @@ const HiNeighbor = () => {
               <div className="row">
                 <div className="col-1" />
                 <div className="col-5 d-grid text-start p-2">
-                  {/* <div className="KeyNumber">5</div> */}
                   <HighlightedNumber num="5" />
                   wanted to feel close enough to their neighbors to meet up
                   monthly
                 </div>
                 <div className="col-1" />
                 <div className="col-5 d-grid text-start p-2">
-                  {/* <div className="KeyNumber">5</div> */}
                   <HighlightedNumber num="5" />
                   stated they were much more likely to use the platform if they
                   saw others using it
                 </div>
-              </div>
+              </div> */}
               <div className="subsectionSpacer" />
               Five of the six participant expressed that they wanted a stronger
               sense of community between their apartment building's units and
@@ -463,7 +486,7 @@ const HiNeighbor = () => {
               <HeaderAndText
                 type="section header"
                 title="interviews - round 2"
-                text={"Evaluating BoundarEase as a tool"}
+                text={"Usability testing and additional feedback"}
               />
             </div>
             <div className={sectionContentColumnSpacing}>
@@ -476,7 +499,9 @@ const HiNeighbor = () => {
               the concept from the artefacts presented to them, appreciating the
               simple and succinct intructions. They also found the interface
               straightforward.
-              <div className="row mt-4 text-center filter-darkblue">
+              <div className="paragraphSpacer" />
+              {/* <div className="row mt-4 text-center filter-darkblue"> */}
+              <div className="row mt-4 filter-darkblue quote">
                 <div className="col-1">
                   <img src={quotemark} alt='"' />
                 </div>
@@ -485,7 +510,7 @@ const HiNeighbor = () => {
                   realized it’s not just junk, it could actually help me out”
                 </div>
               </div>
-              <div className="row mt-4 mb-4 text-center filter-darkblue">
+              <div className="row mt-4 mb-4 filter-darkblue quote">
                 <div className="col-1">
                   <img src={quotemark} alt='"' />
                 </div>
@@ -498,6 +523,7 @@ const HiNeighbor = () => {
                   and it did so by being non-intrusive and to the point.”
                 </div>
               </div>
+              <div className="paragraphSpacer" />
               One interviewee mentioned how something like this would have been
               helpful when he moved into a small apartment building in a new
               city by himself. Another reflected how this would have been

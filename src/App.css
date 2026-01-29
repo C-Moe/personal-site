@@ -1,8 +1,9 @@
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   line-height: normal;
-  font-weight: 350;
-  font-size: 0.95em;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 130%;
   color: var(--off-black);
   background-color: var(--off-white);
 }
@@ -66,6 +67,11 @@ h5,
 h6 {
   color: var(--off-black);
   font-family: "Noto Serif Display", Palatino, serif;
+}
+
+ol > li > h5 {
+  font-family: "Inter";
+  font-weight: 500;
 }
 
 #nav {
@@ -139,6 +145,7 @@ h6 {
 
 .projectSubtitle1 {
   font-size: 1.5em;
+  line-height: 130%;
   color: var(--grey);
 }
 
@@ -381,14 +388,13 @@ b {
 }
 
 .highlight {
-  /* background-color: var(--yellow); */
   padding: 0px 2px;
   background: linear-gradient(
     to top,
     var(--transparent-yellow) 35%,
     transparent 50%
   );
-  font-weight: 430;
+  font-weight: 500;
 }
 
 .offsetText {
@@ -400,7 +406,7 @@ b {
   font-family: "Noto Serif Display", Palatino, serif;
   font-size: 3rem;
   /* font-size: clamp(1.5rem, 4vw, 3rem); */
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 .stat {
@@ -408,6 +414,14 @@ b {
   padding-right: 3rem;
   padding-left: 1rem;
   /* align-items: end; */
+}
+
+.keyInfoCaption {
+  font-weight: 400;
+}
+
+.quote {
+  font-weight: 500;
 }
 
 ol li {

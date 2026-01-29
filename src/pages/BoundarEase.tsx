@@ -91,10 +91,9 @@ const BoundarEase = () => {
             We conducted{" "}
             <span className="highlight">16 semi-structured interviews</span>{" "}
             with parents who were going through the change to better understand
-            the challenges of participating in community engagement initiatives
-            for boundary planning. We synthesized recurring themes and
-            consolidated ideas by creating an affinity diagram from our notes
-            and transcripts,{" "}
+            the challenges of engaging with community-centric boundary planning
+            initiatives. We synthesized recurring themes and consolidated ideas
+            by creating an affinity diagram from our notes and transcripts,{" "}
             <span className="highlight">finding three major patterns.</span>
             <div className="row projectImage">
               <img
@@ -123,10 +122,10 @@ const BoundarEase = () => {
             Parents also felt that the school district was ignoring feedback,
             which led some to not fill out the surveys at all.
             <div className="paragraphSpacer" />
-            They also did not understand the rationale behind the decisions that
-            were being made. A couple of parents suggested framing the boundary
-            changes in terms of four priorities that the school board agreed
-            upon in the past.
+            Furthermore, they did not understand the rationale behind the
+            decisions that were being made. A couple of parents suggested
+            framing the boundary changes in terms of four priorities that the
+            school board agreed upon in the past.
           </div>
         </div>
         <div className="sectionSpacer" />
@@ -219,9 +218,9 @@ const BoundarEase = () => {
               engaging experience that could also encourage empathy.
               <div className="paragraphSpacer" />
               Initially, we settled on a website that would revolve around a
-              timeline, highlighted feedback events, and documented the process.
-              We saw positive reactions when we talked with the school and SMEs,
-              but felt that the idea was not pushing what was possible or
+              timeline, highlight feedback events, and document the process. We
+              received positive reactions when we talked with the school and
+              SMEs, but felt that the idea was not pushing what was possible or
               already known.
               <div className="paragraphSpacer" />
               So, we{" "}
@@ -265,7 +264,8 @@ const BoundarEase = () => {
               <div className="paragraphSpacer" />
               <ol>
                 <li>
-                  <h4>establishment of feedback loops</h4>
+                  {/* <h4>establishment of feedback loops</h4> */}
+                  <h5>establishment of feedback loops</h5>
                   <p>
                     To address the feeling of not being heard because the
                     district historically never followed up on nor seemed to
@@ -273,29 +273,29 @@ const BoundarEase = () => {
                   </p>
                 </li>
                 <li>
-                  <h4>providing context of redistricting</h4>
+                  <h5>providing context of redistricting</h5>
                   <p>
-                    To reduce possible knowledge gaps of community members not
-                    understanding the point of redistricting, or historical /
-                    societal context and impact
+                    To reduce potential knowledge gaps regarding the purpose of
+                    redistricting, or historical / societal context and impact
                   </p>
                 </li>
                 <li>
-                  <h4>standardization and demystification of language</h4>
+                  <h5>standardization and demystification of language</h5>
                   <p>
                     To clarify confusing messaging from the district and empower
-                    the community with knowledge of the language being used
+                    the community via better understanding of the language being
+                    used
                   </p>
                 </li>
                 <li>
-                  <h4>asking the "right" questions</h4>
+                  <h5>asking the "right" questions</h5>
                   <p>
                     To address the feeling that survey questions are leading,
                     lack nuance, or aren't being asked at all
                   </p>
                 </li>
                 <li>
-                  <h4>streamline relevant information</h4>
+                  <h5>streamline relevant information</h5>
                   <p>
                     To reduce cognitive overload, decentralized information,
                     etc.
@@ -399,16 +399,16 @@ const BoundarEase = () => {
               </div>
               <div className="row g-4">
                 <div className="stat">
-                  <div className="KeyNumber">100%</div>
-                  <div>
+                  <div className="KeyNumber mb-2">100%</div>
+                  <div className="keyInfoCaption">
                     stated BoundarEase was clearer in how new boundaries would
                     affect their families and others compared to the current
                     process
                   </div>
                 </div>
                 <div className="stat">
-                  <div className="KeyNumber">82%</div>
-                  <div>
+                  <div className="KeyNumber mb-2">82%</div>
+                  <div className="keyInfoCaption">
                     believed BoundarEase helped them understand how others might
                     be affected and/or what they care about
                   </div>
