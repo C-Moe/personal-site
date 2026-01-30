@@ -1,6 +1,4 @@
 import ProjectCard from "./ProjectCard";
-// TODO: remove
-import ShopGreen from "./ShopGreen";
 
 const projects: {
   id: string;

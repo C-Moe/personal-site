@@ -1,7 +1,7 @@
 import { images } from "../img_files/HiNeighborImages";
 import Footer from "../components/Footer";
 import HeaderAndText from "../components/HeaderAndText";
-import HighlightedNumber from "../components/HighlightedNumber";
+// import HighlightedNumber from "../components/HighlightedNumber";
 import ProjectInfo from "../components/ProjectInfo";
 import quotemark from "../assets/quotemark.svg";
 import ProjectSubtitles from "../components/ProjectSubtitles";
