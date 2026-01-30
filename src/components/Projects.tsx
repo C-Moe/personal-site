@@ -69,8 +69,6 @@ const Projects = () => {
           ))}
         </div>
       </div>
-
-      <ShopGreen />
     </>
   );
 };
