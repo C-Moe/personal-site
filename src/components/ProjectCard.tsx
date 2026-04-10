@@ -5,11 +5,15 @@ const ProjectCard = (props: {
   title: string;
   projtype: string;
   desc: string;
+  featured?: boolean;
 }) => {
-  const { imgpath, title, projtype, desc } = props;
+  const { imgpath, title, projtype, desc, featured } = props;
 
   return (
-    <div className="card" style={{ cursor: "pointer" }}>
+    <div
+      className={`card ${featured ? "card--featured" : ""}`}
+      // style={{ cursor: "pointer" }}
+    >
       <div className="card-img">
         <img
           src={images[imgpath]}

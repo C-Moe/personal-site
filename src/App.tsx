@@ -7,10 +7,12 @@ import CountryAtAGlance from "./pages/CountryAtAGlance";
 import BackToTop from "./components/BackToTop";
 import TypeAtSea from "./pages/TypeAtSea";
 import Typesetting from "./pages/Typesetting";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
     <>
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/boundarease" element={<BoundarEase />} />

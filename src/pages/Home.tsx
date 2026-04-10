@@ -13,10 +13,12 @@ import Nav from "../components/Nav";
 // import ShopGreen from "./components/ShopGreen";
 import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
-import CustomCursor from "../components/CustomCursor";
+// import CustomCursor from "../components/CustomCursor";
 
+// NOTE: featured project must be first in array for sizing/grid purposes
 const projects: {
   id: string;
+  featured?: boolean;
   imgpath: string;
   title: string;
   projtype: string;
@@ -24,23 +26,24 @@ const projects: {
 }[] = [
   {
     id: "boundarease",
+    featured: true,
     imgpath: "boundarease",
     title: "BoundarEase",
-    projtype: "ux, research, academic study",
+    projtype: "user research / qualitative analysis / programming",
     desc: "A web platform for community members to explore school attendance boundaries and offer feedback, aiming to facilitate engagement and foster more equitable policies.",
   },
   {
     id: "hi-neighbor",
     imgpath: "hi neighbor",
     title: "hi neighbor!",
-    projtype: "ux, concept",
+    projtype: "user journeys / usability testing / UI kit",
     desc: "A digital bulletin board experience to encourage and support relationships in hyperlocal communities via user-generated content.",
   },
   {
     id: "shopgreen",
     imgpath: "shopgreen",
     title: "ShopGreen",
-    projtype: "ui, concept",
+    projtype: "wireframing / usability testing",
     desc: "A curated database for consumers aiming to shop more sustainably.",
   },
   //   {
@@ -76,7 +79,7 @@ const projects: {
 const Home = () => {
   return (
     <div className="appContainer home-page">
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       {/* <Projects /> */}
       <Nav />
 
@@ -88,19 +91,35 @@ const Home = () => {
               fontWeight: 400,
               letterSpacing: "-0.1px",
               marginRight: "10px",
+              fontSize: "3em",
+              lineHeight: "100%",
+              marginBottom: "10px",
             }}
           >
-            Hi, I'm Cassandra
+            Hi, I'm Cassandra{" "}
+            <span style={{ color: "#474747" }}>
+              {" "}
+              — UX designer and occasional developer driven by the why
+            </span>
           </h3>
-          <div>// UX designer and occasional developer driven by the why</div>
+
+          <div>
+            I like making complex information and ecosystems more accessible
+          </div>
         </div>
         <div className="container projectsContainer">
           <div
-            className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+            // className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4"
+            className="projects-grid"
             style={{ width: "100%" }}
           >
             {projects.map((project) => (
-              <Link to={"/" + project.id} style={{ textDecoration: "none" }}>
+              <Link
+                key={project.id}
+                to={"/" + project.id}
+                style={{ textDecoration: "none" }}
+                className={project.featured ? "grid-item--featured" : ""}
+              >
                 <ProjectCard
                   key={project.id}
                   imgpath={project.imgpath}
